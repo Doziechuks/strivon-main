@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+/* SIDEBAR  */
+
+#sidebar {
+  display: block;
+}
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* width: 110px; */
+  width: 350px;
+  height: 100vh;
+  padding: 0 1.7rem;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background: #1b1b32;
+  z-index: 100;
+}
+/* .sidebar:hover {
+  width: 350px;
+  transition: 0.5s;
+} */
+.logo {
+  height: 80px;
+  padding: 40px;
+}
+.logo img {
+  height: 30px;
+}
+.menu {
+  height: 88%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+.menu li {
+  padding: 1rem;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+.menu li:hover,
+.active {
+  background: #f9a12e;
+}
+
+.menu a {
+  color: #fff;
+  /* color: #f9a12e; */
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.menu a span {
+  overflow: hidden;
+}
+.menu a i {
+  font-size: 1.2rem;
+  /* color: #f9a12e; */
+}
+.logout {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.logout a i {
+  color: red;
+}
+.resendbtn {
+  background: transparent;
+  border: none;
+  color: #f2f2f2;
+  font-size: 14.5px;
+  cursor: pointer;
+  padding-left: 5px;
+}
+.resendbtn i {
+  padding-right: 20px;
+  color: #fa4141;
+}
+
+/* main body section */
+.main-content {
+  position: relative;
+  background: #f2f2f2;
+  width: 100%;
+  padding: 1rem;
+}
+.header--wrapper img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.header--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 2rem;
+  margin-bottom: 1rem;
+}
+.header--title {
+  color: #1b1b32;
+  display: flex;
+}
+
+.header--title span {
+  color: #f9a12e;
+}
+.toogle--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  font-size: 1.3rem;
+}
+.nav-btn {
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  background-color: #1b1b32;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.user--info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.search--box {
+  background: #fff;
+  border: 2px solid #dcdcdc;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+}
+.search--box input {
+  background: transparent;
+  padding: 5px;
+  color: #1b1b32;
+}
+.search--box i {
+  font-size: 1.2rem;
+  color: #1b1b32;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.search--box i:hover {
+  transform: scale(1.2);
+}
+.card--container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.card--wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.main--title {
+  color: #1b1b32;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.payment--card {
+  background: #1b1b32;
+  border-radius: 10px;
+  padding: 1.2rem;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+}
+.payment--card:hover {
+  transform: translateY(-5px);
+}
+.card--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.amount {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 12px;
+  font-weight: 200;
+}
+.amount--value {
+  font: 24px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+.icon {
+  color: #fff;
+  padding: 1rem;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  background-color: #f9a12e;
+}
+.card--detail {
+  font-size: 18px;
+  color: #f9a12e;
+  letter-spacing: 2px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* color css */
+.dark-purple {
+  background-color: #1b1b32;
+}
+.dark-orange {
+  background-color: #f9a12e;
+}
+
+/* tabular--wrapper */
+.tabular--wrapper {
+  background: #fff;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 2rem;
+
+  /* max-width: fit-content; */
+  /* max-height: fit-content; */
+}
+.table--container {
+  /* width: fit-content; */
+  width: 100%;
+  overflow-y: scroll;
+  /* overflow-x: scroll; */
+  height: fit-content;
+  max-height: 70vh;
+  padding-bottom: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead {
+  background: #1b1b32;
+}
+th {
+  padding: 15px;
+  text-align: left;
+  color: #fff;
+}
+tbody {
+  background: #f2f2f2;
+}
+td {
+  padding: 15px;
+  font-size: 14px;
+  color: #1b1b32;
+}
+tr:nth-child(even) {
+  background: #fff;
+}
+/* tfoot {
+  background: pink;
+  font-weight: bold;
+  color: #fff;
+}
+tfoot td {
+  padding: 15px;
+} */
+.table--container button {
+  color: #fff;
+  padding: 10px 20px;
+  background: green;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* send mail  */
+.email--form {
+  background-color: #f2f2f2;
+  padding: 2rem;
+  width: 100%;
+  border-radius: 10px;
+}
+.email--form Select {
+  width: 100%;
+  padding: 10px 1.2rem;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid #dcdcdc;
+  color: #1b1b32;
+}
+.email--form Select option {
+  color: #1b1b32;
+}
+.email--form input {
+  width: 100%;
+  padding: 10px 1.2rem;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid #dcdcdc;
+  color: #1b1b32;
+}
+.email--form textarea {
+  width: 100%;
+  padding: 10px 1.2rem;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid #dcdcdc;
+  color: #1b1b32;
+}
+.email--form button {
+  width: 100%;
+  padding: 10px 1.2rem;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #1b1b32;
+}
+.email--form button:hover {
+  color: #f9a12e;
+  background-color: #2c2c57;
+}
+/* footer */
+.footer {
+  background-color: #1b1b32;
+  border-radius: 10px;
+  padding: 10px 2rem;
+  margin-top: 20px;
+}
+.footer p {
+  text-align: center;
+}
+.footer p a {
+  color: #f2f2f2;
+  font-size: 12px;
+  text-decoration: none;
+}
+.footer p a:hover {
+  color: #f9a12e;
+}
