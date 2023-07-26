@@ -1,6 +1,6 @@
 import "./App.css";
 import HomePage from "./pages/HomePage/HomePage";
-import DashboardPage from "./pages/HomePage/Dashboard/Dashboard.page";
+import DashboardPage from "./pages/Dashboard/Dashboard.page";
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
