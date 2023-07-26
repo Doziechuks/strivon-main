@@ -4,10 +4,13 @@ import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect';
 import { selectMobileView } from '../../redux/mobileToggle/mobileToggleSelect';
 import { setMobileView } from '../../redux/mobileToggle/mobileToggleAction';
+import DashMenu from '../MenuItems/DashMenu';
 
 const MobileSidebar = ({toggle, setToggle}) => {
   return (
-    <div className={`${styles.container} ${!toggle && styles.hide}`}>Mobilesidebar</div>
+    <div className={`${styles.container} ${!toggle && styles.hide}`}>
+        <DashMenu />
+    </div>
   )
 }
 
