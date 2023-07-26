@@ -1,9 +1,31 @@
 .dashmenu{
-    border: 1px solid #000;
-    height: 20rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     
 }
+.item{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 0.7rem 0rem 0.7rem 2rem;
+}
+.icon{
+    margin-right: 0.5rem;
+}
 .dashmenu img{
-    width: 1rem;
-    height: 1rem;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.item:hover{
+    background-color: #f9a12e;
+}
+
+@media screen and (max-width: 650px){
+    .dashmenu{
+        padding-top: 5rem;
+    }
 }
