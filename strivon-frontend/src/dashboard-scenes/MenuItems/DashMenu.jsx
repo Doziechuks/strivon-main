@@ -8,23 +8,23 @@ import { MdPercent } from "react-icons/md";
 const DashMenu = () => {
   return (
     <section className={styles.dashmenu}>
-      <div>
-        <AiOutlineUser />
+      <div className={styles.item}>
+        <AiOutlineUser className={styles.icon}/>
         Profile
       </div>
-      <div>
-        <TbStack2 />
+      <div className={styles.item} >
+        <TbStack2 className={styles.icon}/>
         Payments
       </div>
-      <div>
-        <HiOutlineAcademicCap />
+      <div className={styles.item}>
+        <HiOutlineAcademicCap className={styles.icon}/>
         Courses
       </div>
-      <div>
-        <MdPercent /> Result
+      <div className={styles.item}>
+        <MdPercent className={styles.icon}/> Result
       </div>
-      <div>
-        <img src="./assets/icons/referral.svg" alt="referral" /> Referral
+      <div className={styles.item}>
+        <img src="./assets/icons/referral.svg" alt="referral" className={styles.icon}/> Referral
       </div>
     </section>
   );
