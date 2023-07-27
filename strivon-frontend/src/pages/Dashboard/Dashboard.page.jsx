@@ -9,13 +9,29 @@ import { createStructuredSelector } from 'reselect';
 import { setMobileView } from '../../redux/mobileToggle/mobileToggleAction';
 import { selectMobileView } from '../../redux/mobileToggle/mobileToggleSelect';
 
+import { Routes, Route } from 'react-router-dom';
+import Profile from '../../dashboard-scenes/Profile/Profile';
+import Courses from '../../dashboard-scenes/Courses/Courses';
+import Payments from '../../dashboard-scenes/Payments/Payments';
+import Results from '../../dashboard-scenes/Results/Results';
+import Referral from '../../dashboard-scenes/Referral/Referral';
 
 const DashboardPage = ({toggle, setToggle}) => {
   return (
     <div className={styles.container}>
         <Topbar />
+        <div className={styles.wrap}>
         <Sidebar />
         <MobileSidebar />
+        <Routes>
+          <Route path='/profile' element={<Profile />}/>
+          <Route path='/courses' element={<Courses />}/>
+          <Route path='/payments' element={<Payments />}/>
+          <Route path='/results' element={<Results />}/>
+          <Route path='/referral' element={<Referral />}/>
+        </Routes>
+        </div>
+      
     </div>
   )
 }
