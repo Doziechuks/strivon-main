@@ -44,7 +44,7 @@ const Topbar = ({toggle, setToggle}) => {
       <div className={styles.menubar}>
         {!toggle ? (
           <img
-            src="./assets/icons/menu.svg"
+            src="../assets/icons/menu.svg"
             alt="menu-icon"
             onClick={() => setToggle(false)}
           />
