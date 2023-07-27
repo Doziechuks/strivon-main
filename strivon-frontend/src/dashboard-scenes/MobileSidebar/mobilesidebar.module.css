@@ -1,0 +1,17 @@
+.container{
+    position: absolute;
+    background-color: antiquewhite;
+    height: 70vh;
+    width: 80%;
+    display: none;
+    margin-top: 6rem;
+}
+@media screen and (max-width: 650px){
+    .container{
+        display: block;
+        transition: 0.4s all ease-in;
+    }
+    .hide{
+        transform: translateX(-110%);
+    }
+}

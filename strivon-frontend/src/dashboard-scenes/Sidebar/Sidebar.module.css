@@ -1,0 +1,14 @@
+.container{
+    width: 20%;
+    padding-top: 6rem;
+    margin-top: 5rem;
+    height: calc(100vh - 5rem);
+    /* background-color: #f9a12e; */
+    background-color: antiquewhite;
+}
+
+@media screen and (max-width: 650px){
+    .container{
+        display: none;
+    }
+}
