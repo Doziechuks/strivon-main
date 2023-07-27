@@ -10,7 +10,7 @@ const Navbar = () => {
     setPathName(pathname);
   }, [pathname]);
   return (
-    <nav className={styles.container}>
+    <nav className={`${styles.container} ${pathName !== "/" && styles.remove}`}>
       <div className={styles.wrapper}>
         <div className={styles.logoBox}>
           <Link to="/">

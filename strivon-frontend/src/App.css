@@ -1,5 +1,5 @@
 * {
-<<<<<<< HEAD
+  /* <<<<<<< HEAD */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,13 +14,17 @@
   border: 1px red solid;
   width: 100%;
   min-height: 100vh;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   /* justify-content: center; */
   /* gap: 3rem; */
 }
-=======
+
+::-webkit-scrollbar {
+  display: none;
+}
+/* =======
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,9 +34,6 @@
 a {
   text-decoration: none;
   color: black;
-}
+} */
 
-::-webkit-scrollbar {
-  display: none;
-}
->>>>>>> 8574e1a5bb42edb99d4d0b0446c36b0ef765bedc
+/* >>>>>>> 8574e1a5bb42edb99d4d0b0446c36b0ef765bedc */
