@@ -1,0 +1,15 @@
+.customBtn {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.6rem 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 0.3rem;
+  background: linear-gradient(to top right, #1b1b32, #4a4af2);
+  transition: all 1s ease-in-out;
+}
+.customBtn:hover {
+  background: linear-gradient(to top left, #1b1b32, #4a4af2);
+}
