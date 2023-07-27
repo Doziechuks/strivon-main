@@ -1,0 +1,11 @@
+.courses{
+    margin-top: 5rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    .courses{
+        min-height: 100vh;
+    }
+    
+}

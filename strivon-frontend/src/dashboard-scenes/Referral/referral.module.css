@@ -1,0 +1,11 @@
+.referral{
+    width: 100%;
+    margin-top: 5rem;
+}
+
+@media screen and (max-width: 650px) {
+    .referral{
+        min-height: 100vh;
+    }
+    
+}
