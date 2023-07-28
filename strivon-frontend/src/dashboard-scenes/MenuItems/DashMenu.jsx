@@ -4,7 +4,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { TbStack2 } from "react-icons/tb";
 import { HiOutlineAcademicCap } from "react-icons/hi";
 import { MdPercent } from "react-icons/md";
-
+import referralicon from '../../assets/icons/referral.svg';
 import { Link } from "react-router-dom";
 import { setMobileView } from "../../redux/mobileToggle/mobileToggleAction";
 import { createStructuredSelector } from "reselect";
@@ -41,10 +41,10 @@ const DashMenu = ({ setToggle }) => {
       <Link to="referral" onClick={() => setToggle(false)}>
         <div className={styles.item}>
           <img
-            src="../assets/icons/referral.svg"
+            src={referralicon}
             alt="referral"
             className={styles.icon}
-          />{" "}
+          />
           Referral
         </div>
       </Link>
