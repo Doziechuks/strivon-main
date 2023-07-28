@@ -6,7 +6,7 @@ import { Route, Routes } from "react-router-dom";
 // public pages
 import HomePage from "./pages/HomePage/HomePage";
 import ContactPage from "./pages/contactPage/ContactPage";
-import Register from "./pages/registerationPage/Register";
+import Register from "./pages/registrationPage/Register";
 
 function App() {
   return (
