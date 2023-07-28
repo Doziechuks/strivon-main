@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Register.module.css";
-import logo from "../../assets/images/strivon1.png";
+// import logo from "../../assets/images/strivon1.png";
 import CustomInput from "../../utils/customInput/CustomInput";
 import CustomButton from "../../utils/customButton/CustomButton";
 
