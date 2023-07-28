@@ -1,5 +1,6 @@
 .dashmenu{
-    height: 24rem;
+    height: 20rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

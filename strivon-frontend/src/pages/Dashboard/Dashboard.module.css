@@ -1,7 +1,9 @@
 .container{
     height: 100vh;
     overflow-y: scroll;
+    
 }
 .wrap{
     display: flex;
+    height: 100%;
 }
