@@ -5,6 +5,7 @@
     width: 80%;
     display: none;
     margin-top: 6rem;
+    z-index: 50;
 }
 @media screen and (max-width: 650px){
     .container{
