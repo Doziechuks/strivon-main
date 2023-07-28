@@ -1,10 +1,9 @@
 import React, { useState, useContext } from "react";
 import styles from "./Topbar.module.css";
 import Logo from "../../logo-cropped.png";
-import About from "../../about.jpg";
+import hamburger from '../../assets/icons/menu.svg'
 import { userdata } from "../../userdata";
 import { SlArrowDown } from "react-icons/sl";
-import { CgCloseO } from "react-icons/cg";
 import { TfiClose } from 'react-icons/tfi'
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
@@ -33,7 +32,7 @@ const Topbar = ({toggle, setToggle}) => {
           <p>{initials}</p>
         </div>
         <div className={styles.namewrap}>
-          <p>{lastNameCap + " " + firstNameCap}</p>
+          <p>{firstNameCap + " " + lastNameCap}</p>
           <SlArrowDown
             size="0.8rem"
             className={`${styles.arrow} ${arrowFlip ? styles.arrowflip : ""}`}
@@ -44,7 +43,7 @@ const Topbar = ({toggle, setToggle}) => {
       <div className={styles.menubar}>
         {!toggle ? (
           <img
-            src="../assets/icons/menu.svg"
+            src={hamburger}
             alt="menu-icon"
             onClick={() => setToggle(false)}
           />
