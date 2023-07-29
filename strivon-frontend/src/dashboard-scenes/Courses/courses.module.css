@@ -1,11 +1,38 @@
 .courses{
     margin-top: 5rem;
     width: 100%;
+    padding: 4rem;
+}
+.wrap{
+
+}
+.wrap h2{
+    text-align: center;
+    padding: 3rem;
+}
+.packagewrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.listcontainer{
+    list-style: none;
+    margin-left: 0.5rem;
+}
+.desc{
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    font-size: 17px;
 }
 
 @media screen and (max-width: 650px) {
     .courses{
         min-height: 100vh;
+        padding: 0;
+    }
+    .packagewrap{
+        grid-template-columns: 1fr;
+        padding: 1rem;
     }
     
 }
