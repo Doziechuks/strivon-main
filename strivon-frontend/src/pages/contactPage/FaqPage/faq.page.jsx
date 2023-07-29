@@ -1,9 +1,7 @@
 import styles from "./faq.module.css";
-import { TfiLayoutAccordionList } from "react-icons/tfi";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import React from "react";
