@@ -7,7 +7,8 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import ContactPage from "./pages/contactPage/ContactPage";
 import Register from "./pages/registrationPage/Register";
-import Faq from "./pages/contactPage/FaqPage/faq.page";
+// import Faq from "./pages/contactPage/FaqPage/faq.page";
+import Faq from "./pages/FaqPage/faq.page";
 
 function App() {
   return (
