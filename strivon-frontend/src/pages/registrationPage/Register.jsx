@@ -28,7 +28,7 @@ const Register = () => {
             Excel through mastery in the tech space
           </h1>
           <p className={styles.subTitle}>
-            Start your journey in the tech field today
+            Start your journey in the field of tech today
           </p>
         </div>
         <div className={styles.mediaBox}>

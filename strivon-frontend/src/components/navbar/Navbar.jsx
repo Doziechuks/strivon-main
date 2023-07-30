@@ -6,14 +6,15 @@ import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
   const [pathName, setPathName] = useState("");
   const { pathname } = useLocation();
-  let removeNav = styles.none;
   useEffect(() => {
     setPathName(pathname);
   }, [pathname]);
   return (
     <nav
       className={`${styles.container} ${
-        pathName.includes("/apply") || pathName.includes("/student")
+        pathName.includes("/apply") ||
+        pathName.includes("/student") ||
+        pathName.includes("/login")
           ? styles.remove
           : ""
       }`}
