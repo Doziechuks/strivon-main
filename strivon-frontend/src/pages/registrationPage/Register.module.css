@@ -1,26 +1,130 @@
 .container {
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 100%;
-  min-height: 80vh;
-  padding: 3rem 0;
+  height: 100vh;
+  /* padding: 3rem 0; */
   display: flex;
   align-items: center;
   justify-content: center;
+  /* gap: 3rem; */
 }
 
-.formSection {
-  border: 1px red solid;
+.logoSection {
+  /* border: 1px red solid; */
   height: 100%;
   width: 50%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.formBox {
-  border: 1px red solid;
+.logoSection .logoBox {
+  /* border: 1px red solid; */
   width: 100%;
+  max-width: 12rem;
+  height: 3rem;
+  cursor: pointer;
+}
+.logoBox img {
+  width: 100%;
+  height: 100%;
+}
+/* .logoSection .titleBox {
+  border: 1px red solid;
+} */
+.titleBox .title {
+  /* border: 1px red solid; */
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.titleBox .subTitle {
+  /* border: 1px red solid; */
+  font-size: 2rem;
+  text-align: center;
+}
+.logoSection .mediaBox {
+  /* border: 1px red solid; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: 2rem;
+}
+.mediaBox .iconBox {
+  /* border: 1px red solid; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.iconBox .link {
+  display: block;
+  /* border: 1px red solid; */
+  width: 1.5rem;
+  height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.formSection {
+  /* border: 1px red solid; */
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.formBox {
+  /* border: 1px red solid; */
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.termsBox {
+  /* border: 1px red solid; */
+  width: 100%;
+  line-height: 2rem;
+}
+.termsBox a {
+  /* border: 1px red solid; */
+  display: inline;
+  color: #4a4af2;
+}
+
+@media screen and (max-width: 1400px) {
+  .titleBox .title {
+    font-size: 2rem;
+  }
+  .titleBox .subTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .logoSection {
+    display: none;
+  }
+  .formSection {
+    height: 100%;
+    width: 100%;
+  }
+  .formBox {
+    /* border: 1px red solid; */
+    width: 90%;
+  }
 }
