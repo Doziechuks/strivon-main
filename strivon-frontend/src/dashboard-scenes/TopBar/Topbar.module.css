@@ -56,13 +56,15 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
+
 .namewrap p{
     font-size: 1.2rem;
+    color: white;
 }
 .arrow{
     transition: 0.5s ease-in all;
+    color: white;
 }
 .arrowflip{
     transform: rotate(180deg);
