@@ -13,6 +13,7 @@
     justify-content: space-between;
     margin-bottom: 2rem;
 }
+
 .usericon{
     width: 6rem;
     height: 6rem;
@@ -76,6 +77,13 @@
     .heading{
         display: flex;
         flex-direction: column;
+    }
+    .heading h2{
+        font-size: 1.2rem;
+        margin: 2rem 0;
+    }
+    article p{
+        font-size: 0.9rem;
     }
     .formwrap form{
         grid-template-columns: 1fr;
