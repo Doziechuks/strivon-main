@@ -5,4 +5,6 @@ export const userdata = {
   userName: "loremipsum12",
   age: "25",
   gender: "male",
+  studentId: 'STR/2023/014',
+  coursePlan: 'Frontend-L1'
 };
