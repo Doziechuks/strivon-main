@@ -1,9 +1,9 @@
 * {
-  /* <<<<<<< HEAD */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Lexend", "Roboto", sans-serif;
+  color: #1b1b32;
 }
 * a {
   text-decoration: none;
