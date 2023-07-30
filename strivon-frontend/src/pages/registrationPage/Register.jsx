@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Register.module.css";
 import logo from "../../assets/images/strivon1.png";
-import image from "../../assets/images/bck.jpg";
+import image from "../../assets/images/back.jpg";
 import CustomInput from "../../utils/customInput/CustomInput";
 import CustomButton from "../../utils/customButton/CustomButton";
 import { Link, useNavigate } from "react-router-dom";
@@ -50,6 +50,19 @@ const Register = () => {
         </div>
       </section>
       <section className={styles.formSection}>
+        <div className={styles.applicationBox}>
+          <h2>application form</h2>
+          <p>Please fill in your details</p>
+        </div>
+        <div className={styles.mobileHeading}>
+          <div className={styles.logoBox} onClick={() => navigate("/")}>
+            <img src={logo} alt="" />
+          </div>
+          <div className={styles.mobileTitle}>
+            <h2>application form</h2>
+            <p>Please fill in your details correctly</p>
+          </div>
+        </div>
         <form className={styles.formBox}>
           <CustomInput placeholder="Full name" type="name" required />
           <CustomInput placeholder="email" type="email" required />
