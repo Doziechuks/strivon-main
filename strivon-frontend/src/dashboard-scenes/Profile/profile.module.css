@@ -37,6 +37,13 @@
     border-radius: 50%;
     font-size: 2rem;
 }
+
+.add{
+    color: purple;
+    font-weight: 200;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
 .formwrap{
     margin-top: 2rem;
 }
