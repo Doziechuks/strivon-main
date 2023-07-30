@@ -3,7 +3,7 @@ import { userdata } from "../../userdata";
 import { MdAddAPhoto } from "react-icons/md";
 
 const Profile = () => {
-  const { firstName, lastName, email, gender } = userdata;
+  const { firstName, lastName, email, gender, studentId, coursePlan } = userdata;
   const firstNameCap = firstName?.charAt(0).toUpperCase() + firstName?.slice(1),
     lastNameCap = lastName?.charAt(0).toUpperCase() + lastName?.slice(1),
     initials = firstNameCap.charAt(0) + lastNameCap.charAt(0);
@@ -14,8 +14,9 @@ const Profile = () => {
         <div className={styles.heading}>
           <h2>Personal Information</h2>
           <article>
-            <p>Student ID:</p>
-            <p>Course plan:</p>
+            <p>Student ID: {studentId}</p>
+            <br />
+            <p>Course plan: {coursePlan}</p>
           </article>
         </div>
 
@@ -48,10 +49,6 @@ const Profile = () => {
                 <option value={gender}>{gender}</option>
                 <option value="female">female</option>
               </select>
-            </div>
-            <div className={styles.formgroup}>
-              <label htmlFor="">First Name</label>
-              <input type="text" value={firstName} />
             </div>
           </form>
         </div>
