@@ -6,11 +6,18 @@ import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
   const [pathName, setPathName] = useState("");
   const { pathname } = useLocation();
+  let removeNav = styles.none;
   useEffect(() => {
     setPathName(pathname);
   }, [pathname]);
   return (
-    <nav className={`${styles.container} ${pathName !== "/" && styles.remove}`}>
+    <nav
+      className={`${styles.container} ${
+        pathName.includes("/apply") || pathName.includes("/student")
+          ? styles.remove
+          : ""
+      }`}
+    >
       <div className={styles.wrapper}>
         <div className={styles.logoBox}>
           <Link to="/">

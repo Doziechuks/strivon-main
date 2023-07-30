@@ -3,9 +3,9 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { List, ListItem } from "@mui/material";
 
 import React from "react";
-import { List, ListItem } from "@mui/material";
 
 const Faq = () => {
   return (
@@ -78,8 +78,9 @@ const Faq = () => {
           <AccordionDetails>
             <p>
               You are advised to go through our courses and pick a niche that
-              interests you the most, after which you click on the 'Apply Now' button
-              on the home page, fill in your details and you are good to go.
+              interests you the most, after which you click on the 'Apply Now'
+              button on the home page, fill in your details and you are good to
+              go.
             </p>
           </AccordionDetails>
         </Accordion>
