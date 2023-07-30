@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Login.module.css";
 import logo from "../../assets/images/strivon1.png";
-import image from "../../assets/images/back.jpg";
+import image from "../../assets/images/mainback.jpg";
 import CustomButton from "../../utils/customButton/CustomButton";
 import CustomInput from "../../utils/customInput/CustomInput";
 import {
@@ -10,7 +10,7 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
