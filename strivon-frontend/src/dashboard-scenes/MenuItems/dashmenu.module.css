@@ -20,9 +20,16 @@
     width: 1.3rem;
     height: 1.3rem;
 }
-
+.active{
+    background: #1b1b32;
+    color: white;
+}
+.active .icon{
+    filter: invert(100%) sepia(1%) saturate(3016%) hue-rotate(236deg) brightness(114%) contrast(101%);
+}
 .item:hover{
     background-color: #f9a12e;
+    
 }
 
 @media screen and (max-width: 650px){
