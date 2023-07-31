@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./dashmenu.module.css";
 import { AiOutlineUser } from "react-icons/ai";
 import { TbStack2 } from "react-icons/tb";
@@ -10,13 +10,22 @@ import { setMobileView } from "../../redux/mobileToggle/mobileToggleAction";
 import { createStructuredSelector } from "reselect";
 import { selectMobileView } from "../../redux/mobileToggle/mobileToggleSelect";
 import { connect } from "react-redux";
+import { useLocation } from "react-router-dom";
 
 const DashMenu = ({ setToggle }) => {
+  const [pathName, setPathName] = useState("");
+  const location = useLocation();
+  const { pathname } = location;
+
+  useEffect(() => {
+    setPathName(pathname);
+  }, [pathname]);
+
   return (
     <section className={styles.dashmenu}>
       <Link to="profile" onClick={() => setToggle(false)}>
-        <div className={styles.item}>
-          <AiOutlineUser className={styles.icon} />
+        <div className={`${styles.item} ${pathName.includes('profile') ? styles.active : ''}`}>
+          <AiOutlineUser className={`${styles.icon} ${pathName.includes('profile') ? styles.change : ''}`} />
           Profile
         </div>
       </Link>
