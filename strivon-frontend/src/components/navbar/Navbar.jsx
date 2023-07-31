@@ -94,13 +94,13 @@ const Navbar = () => {
         </div>
       </nav>
       <div className={`${styles.trackBox} ${show && styles.showOptions}`}>
-        <Link to="/track/frontend" className={styles.trackLink}>
+        <Link to="/tracks/frontend" className={styles.trackLink}>
           frontend Track
         </Link>
-        <Link to="/track/backend" className={styles.trackLink}>
+        <Link to="/tracks/backend" className={styles.trackLink}>
           backend Track
         </Link>
-        <Link to="/track/mobileapp" className={styles.trackLink}>
+        <Link to="/tracks/mobileapp" className={styles.trackLink}>
           mobile app Track
         </Link>
       </div>
