@@ -35,6 +35,7 @@ const Topbar = ({toggle, setToggle}) => {
           <p>{firstNameCap + " " + lastNameCap}</p>
           <SlArrowDown
             size="0.8rem"
+            fill='white'
             className={`${styles.arrow} ${arrowFlip ? styles.arrowflip : ""}`}
             onClick={() => setArrowFlip((prev) => !prev)}
           />
@@ -48,7 +49,7 @@ const Topbar = ({toggle, setToggle}) => {
             onClick={() => setToggle(false)}
           />
         ) : (
-          <TfiClose onClick={() => setToggle(toggle)} className={styles.close}/>
+          <TfiClose onClick={() => setToggle(toggle)} className={styles.close} fill='white' />
         )}
       </div>
     </div>

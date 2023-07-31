@@ -64,7 +64,7 @@
 }
 .arrow{
     transition: 0.5s ease-in all;
-    color: white;
+    font-weight: 400;
 }
 .arrowflip{
     transform: rotate(180deg);
