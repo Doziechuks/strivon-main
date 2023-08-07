@@ -48,13 +48,16 @@
 .navOptions {
   display: none;
 }
-.navOptions hr {
-  margin: 1rem 0;
-}
 .navOptions .linkOption {
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   text-transform: capitalize;
   font-size: 1.4rem;
+}
+.navOptions .line {
+  border-bottom: 1px lightgray dotted;
+  width: 100%;
+  margin: 1rem 0;
+  background-color: lightgray;
 }
 /* .navOptions .trackBox {
   border: 1px red solid;

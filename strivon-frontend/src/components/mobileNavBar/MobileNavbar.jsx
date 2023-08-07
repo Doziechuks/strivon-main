@@ -61,7 +61,7 @@ const MobileNavbar = () => {
         <Link to="/" className={styles.linkOption}>
           home
         </Link>
-        <hr />
+        <div className={styles.line} />
         <Link to="/aboutus" className={styles.linkOption}>
           about us
         </Link>
@@ -75,27 +75,27 @@ const MobileNavbar = () => {
           )}
         </div> */}
 
-        <hr />
+        <div className={styles.line} />
         <Link to="/tracks/frontend" className={styles.linkOption}>
           frontend track
         </Link>
-        <hr />
+        <div className={styles.line} />
         <Link to="/tracks/backend" className={styles.linkOption}>
           backend track
         </Link>
-        <hr />
+        <div className={styles.line} />
         <Link to="/tracks/mobileapp" className={styles.linkOption}>
           mobile app track
         </Link>
-        <hr />
+        <div className={styles.line} />
         <Link to="/faqs" className={styles.linkOption}>
           FAQs
         </Link>
-        <hr />
+        <div className={styles.line} />
         <Link to="/contactus" className={styles.linkOption}>
           contact us
         </Link>
-        <hr />
+        <div className={styles.line} />
         <Link to="/apply" className={styles.linkOption}>
           apply now
         </Link>
