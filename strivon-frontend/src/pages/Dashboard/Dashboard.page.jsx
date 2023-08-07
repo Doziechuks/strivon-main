@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Dashboard.module.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "../../dashboard-scenes/Sidebar/Sidebar.component";
@@ -15,8 +15,16 @@ import Courses from "../../dashboard-scenes/Courses/Courses";
 import Payments from "../../dashboard-scenes/Payments/Payments";
 import Results from "../../dashboard-scenes/Results/Results";
 import Referral from "../../dashboard-scenes/Referral/Referral";
+import { Seo } from "../../utils/seo";
 
 const DashboardPage = ({ toggle, setToggle }) => {
+  useEffect(() => {
+    Seo({
+      title: "Student Dashboard || Strivon Academy",
+      metaDescription:
+        "Details of studen's personal profile, perforemces, and pogress in the on going session at Strivon Academy",
+    });
+  }, []);
   return (
     <div className={styles.container}>
       <Topbar />
