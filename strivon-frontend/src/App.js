@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 // common components
 import Navbar from "./components/navbar/Navbar";
 import MobileNavbar from "./components/mobileNavBar/MobileNavbar";
+import Spinner from "./utils/spinner/Spinner";
 
 // public pages
 const Home = lazy(() => import("./pages/HomePage/HomePage"));
@@ -28,7 +29,7 @@ function App() {
     <div className="app">
       <Navbar />
       <MobileNavbar />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Spinner />}>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/contactus" element={<Contact />} />
