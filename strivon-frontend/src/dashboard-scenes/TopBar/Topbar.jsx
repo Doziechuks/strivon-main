@@ -1,17 +1,16 @@
 import React, { useState, useContext } from "react";
 import styles from "./Topbar.module.css";
 import Logo from "../../assets/images/logo-cropped.png";
-import hamburger from '../../assets/icons/menu.svg'
-import { userdata } from "../../userdata";
+import hamburger from "../../assets/icons/menu.svg";
+import { userdata } from "../Profile/userdata";
 import { SlArrowDown } from "react-icons/sl";
-import { TfiClose } from 'react-icons/tfi'
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-import { selectMobileView } from '../../redux/mobileToggle/mobileToggleSelect';
-import { setMobileView } from '../../redux/mobileToggle/mobileToggleAction';
+import { TfiClose } from "react-icons/tfi";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectMobileView } from "../../redux/mobileToggle/mobileToggleSelect";
+import { setMobileView } from "../../redux/mobileToggle/mobileToggleAction";
 
-
-const Topbar = ({toggle, setToggle}) => {
+const Topbar = ({ toggle, setToggle }) => {
   const [arrowFlip, setArrowFlip] = useState(false);
 
   const { firstName, lastName } = userdata;
@@ -35,7 +34,7 @@ const Topbar = ({toggle, setToggle}) => {
           <p>{firstNameCap + " " + lastNameCap}</p>
           <SlArrowDown
             size="0.8rem"
-            fill='white'
+            fill="white"
             className={`${styles.arrow} ${arrowFlip ? styles.arrowflip : ""}`}
             onClick={() => setArrowFlip((prev) => !prev)}
           />
@@ -49,23 +48,23 @@ const Topbar = ({toggle, setToggle}) => {
             onClick={() => setToggle(false)}
           />
         ) : (
-          <TfiClose onClick={() => setToggle(toggle)} className={styles.close} fill='white' />
+          <TfiClose
+            onClick={() => setToggle(toggle)}
+            className={styles.close}
+            fill="white"
+          />
         )}
       </div>
     </div>
   );
 };
 
-
 const mapStateToProps = createStructuredSelector({
   toggle: selectMobileView,
 });
-
 
 const mapDispatchToProps = (dispatch) => ({
   setToggle: () => dispatch(setMobileView()),
 });
 
-
 export default connect(mapStateToProps, mapDispatchToProps)(Topbar);
-

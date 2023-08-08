@@ -1,5 +1,5 @@
 import styles from "./profile.module.css";
-import { userdata } from "../../userdata";
+import { userdata } from "./userdata";
 import { MdAddAPhoto } from "react-icons/md";
 import CustomInput from "../../utils/customInput/CustomInput";
 
