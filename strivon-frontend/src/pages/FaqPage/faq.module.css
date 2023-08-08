@@ -1,29 +1,35 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+  /* border: 1px red solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.wrap{
-    width: 80%;
+.wrap {
+  /* border: 1px red solid; */
+  width: 80%;
+  padding: 2rem 0;
 }
-.wrap h2{
-    text-align: center;
-    padding: 2rem;
-}
-.unordered li{
-    list-style: none;
-    margin-left: 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-}
-.question{
-    color: blue;
+.wrap h2 {
+  /* border: 1px red solid; */
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
-
-@media screen and (max-width: 650px){
-    .wrap{
-        width: 100%;
-        padding: 1rem;
-    }
+@media screen and (max-width: 850px) {
+  .wrap {
+    width: 100%;
+    padding: 1rem;
+  }
+  .wrap h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .wrap h2 {
+    font-size: 1.4rem;
+    width: 100%;
+  }
 }
