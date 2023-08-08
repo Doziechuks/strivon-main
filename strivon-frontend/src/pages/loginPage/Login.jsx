@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Login.module.css";
 import logo from "../../assets/images/strivon1.png";
 import image from "../../assets/images/mainback.jpg";
@@ -12,9 +12,16 @@ import {
 import { BsFacebook } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { Seo } from "../../utils/seo";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 
 const Login = () => {
+  const [isVisible, setIsVisible] = useState(false);
   const navigate = useNavigate();
+
+  const handleToggleVisibility = () => {
+    setIsVisible((prev) => !prev);
+  };
   useEffect(() => {
     Seo({
       title: "Student Login || Strivon Academy",
@@ -73,7 +80,17 @@ const Login = () => {
         </div>
         <form className={styles.formBox}>
           <CustomInput placeholder="email" type="email" required />
-          <CustomInput placeholder="password" type="password" required />
+          <div className={styles.passwordWrap}>
+            <CustomInput
+              placeholder="password"
+              type={isVisible ? "text" : "password"}
+              required
+            />
+            <div className={styles.toggleBox} onClick={handleToggleVisibility}>
+              {isVisible ? <VisibilityIcon /> : <VisibilityOffIcon />}
+            </div>
+          </div>
+
           <CustomButton title="Proceed to dashboard" />
           <div className={styles.termsBox}>
             can't remeber your password? <span>Reset here!</span>

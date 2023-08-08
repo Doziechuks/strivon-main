@@ -120,7 +120,23 @@
   justify-content: center;
   gap: 1rem;
 }
-
+.formBox .passwordWrap {
+  /* border: 1px red solid; */
+  width: 100%;
+  position: relative;
+}
+.formBox .toggleBox {
+  /* border: 1px red solid; */
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 1rem;
+  bottom: 0.7rem;
+  cursor: pointer;
+}
 .termsBox {
   /* border: 1px red solid; */
   width: 100%;
