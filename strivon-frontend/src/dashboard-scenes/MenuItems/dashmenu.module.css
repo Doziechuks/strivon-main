@@ -13,8 +13,15 @@
     font-size: 1.3rem;
     padding: 0.7rem 0rem 0.7rem 2rem;
 }
+
+
 .icon{
+   color: white;
     margin-right: 0.5rem;
+}
+
+.change{
+    color: white;
 }
 .dashmenu img{
     width: 1.3rem;
@@ -29,7 +36,11 @@
 }
 .item:hover{
     background-color: #f9a12e;
-    
+    color: white;
+}
+.active{
+    background-color: #1b1b32;
+    color: white;
 }
 
 @media screen and (max-width: 650px){
