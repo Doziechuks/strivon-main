@@ -4,11 +4,12 @@
   /* max-width: max-content; */
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  /* gap: 0.5rem; */
 }
 .inputLabel {
   font-size: 1.5rem;
   color: #1b1b32;
+  margin-bottom: 0.5rem;
   /* text-transform: capitalize; */
 }
 .input {
@@ -19,6 +20,6 @@
   width: 100%;
   max-width: 100%;
   /* height: 3rem; */
-  padding: 0.5rem;
+  padding: 0.7rem;
   font-size: 1rem;
 }

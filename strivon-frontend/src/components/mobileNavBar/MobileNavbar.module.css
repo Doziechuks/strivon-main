@@ -109,8 +109,7 @@
 }
 @media screen and (max-width: 600px) {
   .wrapper .logoBox {
-    max-width: 5rem;
-    height: 1.5rem;
+    max-width: 6rem;
   }
   .wrap .register {
     padding: 0.4rem 0.5rem;
