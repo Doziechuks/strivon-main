@@ -14,7 +14,7 @@
 }
 .input {
   outline: none;
-  border: 1px #1b1b32 solid;
+  border: 1px gray solid;
   border-radius: 0.3rem;
   background: transparent;
   width: 100%;
@@ -22,4 +22,7 @@
   /* height: 3rem; */
   padding: 0.7rem;
   font-size: 1rem;
+}
+.input:focus {
+  border: 2px #1b1b32 solid;
 }

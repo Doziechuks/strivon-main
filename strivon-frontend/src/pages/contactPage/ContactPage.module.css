@@ -33,7 +33,7 @@
 }
 .message {
   outline: none;
-  border: 1px #1b1b32 solid;
+  border: 1px gray solid;
   border-radius: 0.3rem;
   background: transparent;
   width: 100%;
@@ -42,6 +42,9 @@
   padding: 0.5rem;
   font-size: 1rem;
   resize: none;
+}
+.message:focus {
+  border: 2px #1b1b32 solid;
 }
 
 @media screen and (max-width: 1200px) {
