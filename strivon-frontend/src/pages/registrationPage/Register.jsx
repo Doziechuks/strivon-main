@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Register.module.css";
 import logo from "../../assets/images/strivon1.png";
 import image from "../../assets/images/mainback.jpg";
@@ -11,9 +11,17 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
+import { Seo } from "../../utils/seo";
 
 const Register = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    Seo({
+      title: "Apply || start your journey towards growing you career in tech",
+      metaDescription:
+        "Have a seamless appliction process in your journey towards mastery in the filed of tech",
+    });
+  }, []);
   return (
     <main className={styles.container}>
       <section

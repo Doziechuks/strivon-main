@@ -4,9 +4,17 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-import React from "react";
+import React, { useEffect } from "react";
+import { Seo } from "../../utils/seo";
 
 const Faq = () => {
+  useEffect(() => {
+    Seo({
+      title: "FAQs || Strivon Academy",
+      metaDescription:
+        "Get clarified on your questions about Strivon Academy on our frequently asked questions section",
+    });
+  }, []);
   return (
     <div className={styles.container}>
       <div className={styles.wrap}>

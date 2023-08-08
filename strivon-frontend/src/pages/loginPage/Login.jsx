@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Login.module.css";
 import logo from "../../assets/images/strivon1.png";
 import image from "../../assets/images/mainback.jpg";
@@ -11,9 +11,17 @@ import {
 } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import { Seo } from "../../utils/seo";
 
 const Login = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    Seo({
+      title: "Student Login || Strivon Academy",
+      metaDescription:
+        "Login to your dashboard to view personal profile, perforemces, and pogress in the on going session at Strivon Academy",
+    });
+  }, []);
   return (
     <main className={styles.container}>
       <section

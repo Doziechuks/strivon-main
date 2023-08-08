@@ -1,0 +1,22 @@
+.container {
+  /* border: 1px red solid; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .spinnerBox {
+  /* border: 1px red solid; */
+  width: 100%;
+  max-width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spinnerBox img {
+  width: 100%;
+  height: 100%;
+}

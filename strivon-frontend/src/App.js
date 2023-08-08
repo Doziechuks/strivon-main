@@ -1,42 +1,52 @@
+import React, { lazy, Suspense } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 
 // common components
 import Navbar from "./components/navbar/Navbar";
+import MobileNavbar from "./components/mobileNavBar/MobileNavbar";
+import Spinner from "./utils/spinner/Spinner";
 
 // public pages
-import HomePage from "./pages/HomePage/HomePage";
-import ContactPage from "./pages/contactPage/ContactPage";
-import Register from "./pages/registrationPage/Register";
-import Faq from "./pages/FaqPage/faq.page";
-import Frontend from "./pages/tracksPages/frontendTrack/Frontend";
-import Backend from "./pages/tracksPages/backendTrack/Backend";
+const Home = lazy(() => import("./pages/HomePage/HomePage"));
+const Register = lazy(() => import("./pages/registrationPage/Register"));
+const Contact = lazy(() => import("./pages/contactPage/ContactPage"));
+const Faq = lazy(() => import("./pages/FaqPage/faq.page"));
+const Frontend = lazy(() =>
+  import("./pages/tracksPages/frontendTrack/Frontend")
+);
+const Backend = lazy(() => import("./pages/tracksPages/backendTrack/Backend"));
+const MobileApp = lazy(() =>
+  import("./pages/tracksPages/mobileAppTrack/MobileApp")
+);
 
-// protected routes
-import Login from "./pages/loginPage/Login";
-import DashboardPage from "./pages/Dashboard/Dashboard.page";
-import MobileApp from "./pages/tracksPages/mobileAppTrack/MobileApp";
+// protect routes
+const Login = lazy(() => import("./pages/loginPage/Login"));
+const Dashboard = lazy(() => import("./pages/Dashboard/Dashboard.page"));
 
 function App() {
   return (
     <div className="app">
       <Navbar />
+      <MobileNavbar />
+      <Suspense fallback={<Spinner />}>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/contactus" element={<Contact />} />
+          <Route path="/apply" element={<Register />} />
 
-      <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/contactus" element={<ContactPage />} />
-        <Route exact path="/apply" element={<Register />} />
-        <Route exact path="/faqs" element={<Faq />} />
-        <Route path="/tracks">
-          <Route path="frontend" element={<Frontend />} />
-          <Route path="backend" element={<Backend />} />
-          <Route path="mobileapp" element={<MobileApp />} />
-        </Route>
+          <Route exact path="/faqs" element={<Faq />} />
+          <Route path="/tracks">
+            <Route path="frontend" element={<Frontend />} />
+            <Route path="backend" element={<Backend />} />
+            <Route path="mobileapp" element={<MobileApp />} />
+          </Route>
 
-        {/* protected pages */}
-        <Route path="/student/*" element={<DashboardPage />} />
-        <Route exact path="/login" element={<Login />} />
-      </Routes>
+          {/* protected pages */}
+          <Route path="/student/*" element={<Dashboard />} />
+          <Route exact path="/login" element={<Login />} />
+        </Routes>
+      </Suspense>
     </div>
   );
 }
