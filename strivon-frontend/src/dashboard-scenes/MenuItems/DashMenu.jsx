@@ -16,6 +16,7 @@ const DashMenu = ({ setToggle }) => {
   const [pathName, setPathName] = useState("");
   const location = useLocation();
   const { pathname } = location;
+
     useEffect(() => {
     setPathName(pathname);
   }, [pathname]);
@@ -24,7 +25,7 @@ const DashMenu = ({ setToggle }) => {
     <section className={styles.dashmenu}>
       <Link to="profile" onClick={() => setToggle(false)}>
         <div className={`${styles.item} ${pathName.includes('profile') ? styles.active : ''}`}>
-          <AiOutlineUser className={styles.icon} />
+          <AiOutlineUser className={`${styles.icon} ${pathName.includes('profile') ? styles.change : ''}`} />
           Profile
         </div>
       </Link>
