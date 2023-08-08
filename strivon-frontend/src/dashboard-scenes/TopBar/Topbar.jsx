@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import styles from "./Topbar.module.css";
-import Logo from "../../logo-cropped.png";
+import Logo from "../../assets/images/logo-cropped.png";
 import hamburger from '../../assets/icons/menu.svg'
 import { userdata } from "../../userdata";
 import { SlArrowDown } from "react-icons/sl";
@@ -35,6 +35,7 @@ const Topbar = ({toggle, setToggle}) => {
           <p>{firstNameCap + " " + lastNameCap}</p>
           <SlArrowDown
             size="0.8rem"
+            fill='white'
             className={`${styles.arrow} ${arrowFlip ? styles.arrowflip : ""}`}
             onClick={() => setArrowFlip((prev) => !prev)}
           />
@@ -48,7 +49,7 @@ const Topbar = ({toggle, setToggle}) => {
             onClick={() => setToggle(false)}
           />
         ) : (
-          <TfiClose onClick={() => setToggle(toggle)} className={styles.close}/>
+          <TfiClose onClick={() => setToggle(toggle)} className={styles.close} fill='white' />
         )}
       </div>
     </div>

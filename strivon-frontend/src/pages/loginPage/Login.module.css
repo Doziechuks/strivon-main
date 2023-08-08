@@ -126,11 +126,13 @@
   width: 100%;
   line-height: 1.8rem;
   font-size: 0.8rem;
+  text-align: center;
 }
-.termsBox a {
+.termsBox span {
   /* border: 1px red solid; */
   display: inline;
   color: #4a4af2;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1400px) {

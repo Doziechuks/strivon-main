@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./dashmenu.module.css";
-import { AiOutlineUser } from "react-icons/ai";
+import { AiFillTaobaoSquare, AiOutlineUser } from "react-icons/ai";
 import { TbStack2 } from "react-icons/tb";
 import { HiOutlineAcademicCap } from "react-icons/hi";
 import { MdPercent } from "react-icons/md";
@@ -17,7 +17,7 @@ const DashMenu = ({ setToggle }) => {
   const location = useLocation();
   const { pathname } = location;
 
-  useEffect(() => {
+    useEffect(() => {
     setPathName(pathname);
   }, [pathname]);
 
@@ -30,25 +30,26 @@ const DashMenu = ({ setToggle }) => {
         </div>
       </Link>
       <Link to="payments" onClick={() => setToggle(false)}>
-        <div className={styles.item}>
+        <div className={`${styles.item} ${pathName.includes('payments') ? styles.active : ''}`}>
           <TbStack2 className={styles.icon} />
           Payments
         </div>
       </Link>
 
       <Link to="courses" onClick={() => setToggle(false)}>
-        <div className={styles.item}>
+        <div className={`${styles.item} ${pathName.includes('courses') ? styles.active : ''}`}>
           <HiOutlineAcademicCap className={styles.icon} />
           Courses
+    
         </div>
       </Link>
       <Link to="results" onClick={() => setToggle(false)}>
-        <div className={styles.item}>
+        <div className={`${styles.item} ${pathName.includes('results') ? styles.active : ''}`}>
           <MdPercent className={styles.icon} /> Result
         </div>
       </Link>
       <Link to="referral" onClick={() => setToggle(false)}>
-        <div className={styles.item}>
+        <div className={`${styles.item} ${pathName.includes('referral') ? styles.active : ''}`}>
           <img
             src={referralicon}
             alt="referral"

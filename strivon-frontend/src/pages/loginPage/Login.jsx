@@ -1,25 +1,25 @@
 import React, { useEffect } from "react";
-import styles from "./Register.module.css";
+import styles from "./Login.module.css";
 import logo from "../../assets/images/strivon1.png";
 import image from "../../assets/images/mainback.jpg";
-import CustomInput from "../../utils/customInput/CustomInput";
 import CustomButton from "../../utils/customButton/CustomButton";
-import { Link, useNavigate } from "react-router-dom";
+import CustomInput from "../../utils/customInput/CustomInput";
 import {
   AiFillTwitterCircle,
   AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 import { Seo } from "../../utils/seo";
 
-const Register = () => {
+const Login = () => {
   const navigate = useNavigate();
   useEffect(() => {
     Seo({
-      title: "Apply || start your journey towards growing you career in tech",
+      title: "Student Login || Strivon Academy",
       metaDescription:
-        "Have a seamless appliction process in your journey towards mastery in the filed of tech",
+        "Login to your dashboard to view personal profile, perforemces, and pogress in the on going session at Strivon Academy",
     });
   }, []);
   return (
@@ -59,31 +59,29 @@ const Register = () => {
       </section>
       <section className={styles.formSection}>
         <div className={styles.applicationBox}>
-          <h2>application form</h2>
-          <p>Please fill in your details</p>
+          <h2>Sign In to your dashboard</h2>
+          <p>Enter your email and password to proceed to your dashboard</p>
         </div>
         <div className={styles.mobileHeading}>
           <div className={styles.logoBox} onClick={() => navigate("/")}>
             <img src={logo} alt="" />
           </div>
           <div className={styles.mobileTitle}>
-            <h2>application form</h2>
-            <p>Please fill in your details correctly</p>
+            <h2>Sign In to your dashboard</h2>
+            <p>Enter your email and password to proceed to your dashboard</p>
           </div>
         </div>
         <form className={styles.formBox}>
-          <CustomInput placeholder="Full name" type="name" required />
           <CustomInput placeholder="email" type="email" required />
-          <CustomInput placeholder="phone number" type="number" required />
+          <CustomInput placeholder="password" type="password" required />
+          <CustomButton title="Proceed to dashboard" />
           <div className={styles.termsBox}>
-            By clicking submit, I agree to <Link>Terms of Use</Link> and
-            acknowledge that I have read the <Link>Privacy Policy</Link>.
+            can't remeber your password? <span>Reset here!</span>
           </div>
-          <CustomButton title="submit" />
         </form>
       </section>
     </main>
   );
 };
 
-export default Register;
+export default Login;

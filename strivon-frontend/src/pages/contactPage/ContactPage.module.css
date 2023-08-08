@@ -1,5 +1,5 @@
 .container {
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 100%;
   min-height: 85vh;
   display: flex;
@@ -8,7 +8,7 @@
   padding: 3rem 0;
 }
 .formBox {
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 100%;
   max-width: 50%;
   margin: 0 auto;
@@ -19,7 +19,7 @@
   gap: 2rem;
 }
 .messageBox {
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 100%;
   /* max-width: max-content; */
   display: flex;
@@ -42,4 +42,12 @@
   padding: 0.5rem;
   font-size: 1rem;
   resize: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .formBox {
+    /* border: 1px red solid; */
+    width: 100%;
+    max-width: 90%;
+  }
 }
