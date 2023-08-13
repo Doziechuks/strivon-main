@@ -51,9 +51,6 @@
   /* transition: all 0.5s ease-in-out; */
   cursor: pointer;
 }
-.option:hover {
-  /* font-weight: 700; */
-}
 .trackOptions {
   width: 100%;
   max-width: max-content;
@@ -66,9 +63,6 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-}
-.trackOptions:hover {
-  /* font-weight: 700; */
 }
 .active {
   font-weight: 700;
