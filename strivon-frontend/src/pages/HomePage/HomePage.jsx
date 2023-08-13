@@ -10,7 +10,7 @@ const HomePage = () => {
         "Learn and gain mastery in highly sort after tech skills at Strivon Academy",
     });
   }, []);
-  return <div>home page</div>;
+  return <main className={styles.container}>home page</main>;
 };
 
 export default HomePage;
