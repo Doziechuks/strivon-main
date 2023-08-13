@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./MobileFooter.module.css";
 import logo from "../../assets/images/strivonwhitetrans.png";
 import { Link, useLocation } from "react-router-dom";
@@ -10,8 +10,22 @@ import email from "../../assets/icons/icon-email.svg";
 import phone from "../../assets/icons/icon-phone.svg";
 
 const MobileFooter = () => {
+  const [pathName, setPathName] = useState("");
+  const { pathname } = useLocation();
+  useEffect(() => {
+    setPathName(pathname);
+  }, [pathname]);
+
   return (
-    <main className={styles.container}>
+    <main
+      className={`${styles.container} ${
+        pathName.includes("/apply") ||
+        pathName.includes("/student") ||
+        pathName.includes("/login")
+          ? styles.remove
+          : ""
+      }`}
+    >
       <section className={styles.wrapper}>
         <div className={styles.logoBox}>
           <Link to="/">
