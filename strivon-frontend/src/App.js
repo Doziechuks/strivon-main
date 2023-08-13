@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 // common components
 import Navbar from "./components/navbar/Navbar";
 import MobileNavbar from "./components/mobileNavBar/MobileNavbar";
+import Footer from "./components/footer/Footer";
 import Spinner from "./utils/spinner/Spinner";
 
 // public pages
@@ -46,6 +47,7 @@ function App() {
           <Route path="/student/*" element={<Dashboard />} />
           <Route exact path="/login" element={<Login />} />
         </Routes>
+        <Footer />
       </Suspense>
     </div>
   );
