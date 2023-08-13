@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.2rem;
+  margin-bottom: 1rem;
 }
 .logoBox img {
   width: 100%;
@@ -34,7 +34,7 @@
   /* border: 1px red solid; */
   width: 100%;
   display: flex;
-  gap: 6rem;
+  gap: 8rem;
 }
 .wrap .box1 {
   /* border: 1px white solid; */
@@ -108,10 +108,15 @@
   text-align: center;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1090px) {
   .wrapper .logoBox {
     max-width: 7rem;
   }
+  .wrapper .wrap {
+    gap: 5rem;
+  }
+}
+@media screen and (max-width: 890px) {
   .wrapper .wrap {
     gap: 2rem;
   }
