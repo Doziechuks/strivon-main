@@ -122,15 +122,22 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .container .wrapper {
+    max-width: 90%;
+  }
   .wrapper .wrap {
     gap: 0;
     flex-direction: column;
+  }
+  .wrap .box2 {
+    margin-left: 0.5rem;
   }
   .wrap .mediaLinkBox {
     margin-top: 2rem;
   }
   .wrap .mobileBox {
     margin: 2rem 0;
+    margin-left: 0.5rem;
   }
   .container .line {
     margin: 1rem auto;
