@@ -66,17 +66,38 @@ const MobileFooter = () => {
             </Link>
           </div>
           <div className={styles.mediaLinkBox}>
-            <span className={styles.mediaLink}>
-              <img src={facebook} alt="linedin logo" />
+            <span
+              className={styles.mediaLink}
+              onClick={() =>
+                window.open(
+                  "https://www.facebook.com/profile.php?id=100093645410148",
+                  "_blank"
+                )
+              }
+            >
+              <img src={facebook} alt="facebook logo" />
+            </span>
+            <span
+              className={styles.mediaLink}
+              onClick={() =>
+                window.open("http://Instagram.com/strivon_academy", "_blank")
+              }
+            >
+              <img src={instagram} alt="instagram logo" />
+            </span>
+            <span
+              className={styles.mediaLink}
+              onClick={() =>
+                window.open(
+                  "https://twitter.com/strivonacademy?t=GNiB-yZBXThEVGA_iYIqjA&s=09",
+                  "_blank"
+                )
+              }
+            >
+              <img src={twitter} alt="twitter logo" />
             </span>
             <span className={styles.mediaLink}>
-              <img src={instagram} alt="linedin logo" />
-            </span>
-            <span className={styles.mediaLink}>
-              <img src={twitter} alt="linedin logo" />
-            </span>
-            <span className={styles.mediaLink}>
-              <img src={linkedin} alt="linedin logo" />
+              <img src={linkedin} alt="linkedin logo" />
             </span>
           </div>
         </div>

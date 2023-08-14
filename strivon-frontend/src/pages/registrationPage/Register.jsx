@@ -41,20 +41,41 @@ const Register = () => {
         </div>
         <div className={styles.mediaBox}>
           <div className={styles.iconBox}>
-            <span className={styles.link}>
+            <span
+              className={styles.link}
+              onClick={() =>
+                window.open(
+                  "https://twitter.com/strivonacademy?t=GNiB-yZBXThEVGA_iYIqjA&s=09",
+                  "_blank"
+                )
+              }
+            >
               <AiFillTwitterCircle size={25} />
             </span>
-            <span className={styles.link}>
+            <span
+              className={styles.link}
+              onClick={() =>
+                window.open(
+                  "https://www.facebook.com/profile.php?id=100093645410148",
+                  "_blank"
+                )
+              }
+            >
               <BsFacebook size={25} />
             </span>
-            <span className={styles.link}>
+            <span
+              className={styles.link}
+              onClick={() =>
+                window.open("http://Instagram.com/strivon_academy", "_blank")
+              }
+            >
               <AiFillInstagram size={25} />
             </span>
             <span className={styles.link}>
               <AiFillLinkedin size={25} />
             </span>
           </div>
-          <p>&copy;2023 Strivon. All rights reserved</p>
+          <p>&copy;2023 Strivon Academy. All rights reserved</p>
         </div>
       </section>
       <section className={styles.formSection}>
