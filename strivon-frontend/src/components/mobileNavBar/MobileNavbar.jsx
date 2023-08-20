@@ -32,7 +32,8 @@ const MobileNavbar = () => {
         className={`${styles.container} ${
           pathName.includes("/apply") ||
           pathName.includes("/student") ||
-          pathName.includes("/login")
+          pathName.includes("/login") ||
+          pathName.includes("/contactus")
             ? styles.remove
             : ""
         }`}
