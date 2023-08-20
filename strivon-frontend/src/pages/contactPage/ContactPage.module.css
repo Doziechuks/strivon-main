@@ -92,7 +92,11 @@
 }
 
 @media screen and (max-width: 1100px) {
+  .container {
+    min-height: 100vh;
+  }
   .container .formSection {
+    /* border: 1px red solid; */
     height: 100%;
     width: 100%;
     justify-content: center;
