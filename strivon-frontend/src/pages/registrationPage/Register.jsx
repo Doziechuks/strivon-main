@@ -1,17 +1,12 @@
 import React, { useEffect } from "react";
 import styles from "./Register.module.css";
+import { Seo } from "../../utils/seo";
+import { Link, useNavigate } from "react-router-dom";
+
 import logo from "../../assets/images/strivon1.png";
-import image from "../../assets/images/mainback.jpg";
 import CustomInput from "../../utils/customInput/CustomInput";
 import CustomButton from "../../utils/customButton/CustomButton";
-import { Link, useNavigate } from "react-router-dom";
-import {
-  AiFillTwitterCircle,
-  AiFillInstagram,
-  AiFillLinkedin,
-} from "react-icons/ai";
-import { BsFacebook } from "react-icons/bs";
-import { Seo } from "../../utils/seo";
+import FormBanner from "../../utils/formBanner/FormBanner";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -24,7 +19,11 @@ const Register = () => {
   }, []);
   return (
     <main className={styles.container}>
-      <section
+      <FormBanner
+        title="Excel through mastery in the tech space"
+        subTitle="Start your journey in the field of tech today"
+      />
+      {/* <section
         className={styles.logoSection}
         style={{ backgroundImage: `url(${image})` }}
       >
@@ -50,7 +49,7 @@ const Register = () => {
                 )
               }
             >
-              <AiFillTwitterCircle size={25} />
+              <img src={twitter} alt="/" />
             </span>
             <span
               className={styles.link}
@@ -61,7 +60,7 @@ const Register = () => {
                 )
               }
             >
-              <BsFacebook size={25} />
+              <img src={facebook} alt="/" />
             </span>
             <span
               className={styles.link}
@@ -69,15 +68,15 @@ const Register = () => {
                 window.open("http://Instagram.com/strivon_academy", "_blank")
               }
             >
-              <AiFillInstagram size={25} />
+              <img src={instagram} alt="/" />
             </span>
             <span className={styles.link}>
-              <AiFillLinkedin size={25} />
+              <img src={linkedin} alt="/" />
             </span>
           </div>
           <p>&copy;2023 Strivon Academy. All rights reserved</p>
         </div>
-      </section>
+      </section> */}
       <section className={styles.formSection}>
         <div className={styles.applicationBox}>
           <h2>application form</h2>
