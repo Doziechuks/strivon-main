@@ -30,13 +30,13 @@
   width: 100%;
   max-width: 70%;
   margin: 0 auto;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   margin-bottom: 2rem;
 }
 .titleBox .subTitle {
   /* border: 1px red solid; */
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: center;
 }
 .logoSection .mediaBox {
@@ -46,7 +46,6 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
 }
 .mediaBox .iconBox {
   /* border: 1px red solid; */
