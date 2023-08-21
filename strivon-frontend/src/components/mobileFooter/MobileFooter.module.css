@@ -90,10 +90,20 @@
   display: flex;
 }
 .mediaLinkBox .mediaLink {
+  /* border: 1px red solid; */
   margin-right: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  align-self: flex-start;
 }
 .mediaLinkBox .mediaLink:last-child {
   margin-right: 0;
+}
+.mediaLinkBox .mediaLink:nth-child(even):hover {
+  transform: translateY(50%);
+}
+.mediaLinkBox .mediaLink:nth-child(odd):hover {
+  transform: translateY(-50%);
 }
 .container .line {
   border-bottom: 1px gray solid;
