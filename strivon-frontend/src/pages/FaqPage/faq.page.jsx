@@ -18,7 +18,7 @@ const Faq = () => {
         <h2>Frequently Asked Questions</h2>
         <According
           question="Can you tell me about Strivon Academy?"
-          answer="Decagon is an elite software engineering and leadership training institute that equips high potential talent with world-class software engineering and leadership skills. We also offer practical exposure to real-life projects through internships."
+          answer="Strivon Academy is an elite software engineering and leadership training institute that equips high potential talent with world-class software engineering and leadership skills. We also offer practical exposure to real-life projects through internships."
         />
         <According
           question="Why Apply for Strivon Academy Training Program?"

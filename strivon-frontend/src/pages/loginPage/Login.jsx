@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Login.module.css";
 import logo from "../../assets/images/strivon1.png";
-import image from "../../assets/images/mainback.jpg";
 import CustomButton from "../../utils/customButton/CustomButton";
 import CustomInput from "../../utils/customInput/CustomInput";
-import {
-  AiFillTwitterCircle,
-  AiFillInstagram,
-  AiFillLinkedin,
-} from "react-icons/ai";
-import { BsFacebook } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { Seo } from "../../utils/seo";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import VisibilityIcon from "@mui/icons-material/Visibility";
+import FormBanner from "../../utils/formBanner/FormBanner";
 
 const Login = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,60 +25,10 @@ const Login = () => {
   }, []);
   return (
     <main className={styles.container}>
-      <section
-        className={styles.logoSection}
-        style={{ backgroundImage: `url(${image})` }}
-      >
-        <div className={styles.logoBox} onClick={() => navigate("/")}>
-          <img src={logo} alt="" />
-        </div>
-        <div className={styles.titleBox}>
-          <h1 className={styles.title}>
-            Excel through mastery in the tech space
-          </h1>
-          <p className={styles.subTitle}>
-            Start your journey in the field of tech today
-          </p>
-        </div>
-        <div className={styles.mediaBox}>
-          <div className={styles.iconBox}>
-            <span
-              className={styles.link}
-              onClick={() =>
-                window.open(
-                  "https://twitter.com/strivonacademy?t=GNiB-yZBXThEVGA_iYIqjA&s=09",
-                  "_blank"
-                )
-              }
-            >
-              <AiFillTwitterCircle size={25} />
-            </span>
-            <span
-              className={styles.link}
-              onClick={() =>
-                window.open(
-                  "https://www.facebook.com/profile.php?id=100093645410148",
-                  "_blank"
-                )
-              }
-            >
-              <BsFacebook size={25} />
-            </span>
-            <span
-              className={styles.link}
-              onClick={() =>
-                window.open("http://Instagram.com/strivon_academy", "_blank")
-              }
-            >
-              <AiFillInstagram size={25} />
-            </span>
-            <span className={styles.link}>
-              <AiFillLinkedin size={25} />
-            </span>
-          </div>
-          <p>&copy;2023 Strivon Academy. All rights reserved</p>
-        </div>
-      </section>
+      <FormBanner
+        title="Excel through mastery in the tech space"
+        subTitle="Start your journey in the field of tech today"
+      />
       <section className={styles.formSection}>
         <div className={styles.applicationBox}>
           <h2>Sign In to your dashboard</h2>
