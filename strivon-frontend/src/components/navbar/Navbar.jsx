@@ -14,7 +14,7 @@ const Navbar = () => {
   };
   useEffect(() => {
     const handleMouseDown = (event) => {
-      if (!event.target.closest(`.${styles.trackOptions}`)) {
+      if (!event.target.closest(`.${styles.trackBox}`)) {
         setShow(false);
       }
     };
@@ -27,6 +27,8 @@ const Navbar = () => {
   useEffect(() => {
     setPathName(pathname);
   }, [pathname]);
+
+  console.log({ show });
   return (
     <>
       <nav
@@ -94,7 +96,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className={`${styles.trackBox} ${show && styles.showOptions}`}>
+      <div className={`${show ? styles.showOptions : styles.trackBox}`}>
         <Link to="/tracks/frontend" className={styles.trackLink}>
           frontend Track
         </Link>
