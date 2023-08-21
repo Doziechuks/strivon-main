@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import styles from "./Topbar.module.css";
 import Logo from "../../assets/images/logo-cropped.png";
 import hamburger from "../../assets/icons/menu.svg";
