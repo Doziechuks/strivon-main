@@ -96,6 +96,9 @@
     margin: 0 auto;
     margin-bottom: 4rem;
   }
+  .mobileHeading .logoBox img {
+    width: 100%;
+  }
   .mobileHeading .mobileTitle {
     /* border: 1px red solid; */
     width: 100%;
