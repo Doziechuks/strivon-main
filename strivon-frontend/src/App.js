@@ -13,6 +13,7 @@ const Home = lazy(() => import("./pages/HomePage/HomePage"));
 const Register = lazy(() => import("./pages/registrationPage/Register"));
 const Contact = lazy(() => import("./pages/contactPage/ContactPage"));
 const Faq = lazy(() => import("./pages/FaqPage/faq.page"));
+const About = lazy(() => import("./pages/AboutPage/AboutPage"))
 const Frontend = lazy(() =>
   import("./pages/tracksPages/frontendTrack/Frontend")
 );
@@ -34,6 +35,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/contactus" element={<Contact />} />
+          <Route exact path="/about" element={<About />} />
           <Route path="/apply" element={<Register />} />
 
           <Route exact path="/faqs" element={<Faq />} />

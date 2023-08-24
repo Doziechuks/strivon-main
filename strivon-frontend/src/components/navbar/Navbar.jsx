@@ -54,15 +54,15 @@ const Navbar = () => {
               }`}
               to="/"
             >
-              home
+              Home
             </Link>
             <Link
-              to="/aboutus"
+              to="/about"
               className={`${styles.option} ${
-                pathName.includes("/aboutus") ? styles.active : ""
+                pathName.includes("/about") ? styles.active : ""
               }`}
             >
-              about us
+              About
             </Link>
             <span
               className={`${styles.trackOptions} ${
@@ -70,7 +70,7 @@ const Navbar = () => {
               }`}
               onClick={handleShowTracks}
             >
-              tracks {show ? <FaAngleUp /> : <FaAngleDown />}
+              Tracks {show ? <FaAngleUp /> : <FaAngleDown />}
             </span>
             <Link
               to="/faqs"
@@ -86,12 +86,12 @@ const Navbar = () => {
                 pathName.includes("/contactus") ? styles.active : ""
               }`}
             >
-              contact us
+              Contact us
             </Link>
           </div>
           <div className={styles.loginBox}>
             <Link to="/apply" className={styles.register}>
-              apply now
+              Apply Now
             </Link>
           </div>
         </div>
