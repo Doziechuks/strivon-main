@@ -6,6 +6,7 @@
   background-color: #1b1b32;
   border-radius: 0.5rem;
   position: fixed;
+  z-index: 10;
   bottom: -5rem;
   right: 3rem;
   transform: rotate(-15deg);
