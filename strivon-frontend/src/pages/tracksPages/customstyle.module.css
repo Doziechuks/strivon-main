@@ -1,0 +1,25 @@
+.learnCard {
+  width: 100%;
+}
+.learnCard .item {
+  /* border: 1px red solid; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.learnCard .line {
+  border-bottom: 2px #1b1b32 dotted;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+.item > p {
+  color: #1b1b32;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+@media screen and (max-width: 1000px) {
+  .item > p {
+    font-size: 0.9rem;
+  }
+}
