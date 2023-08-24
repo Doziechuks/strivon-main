@@ -7,13 +7,14 @@ import Navbar from "./components/navbar/Navbar";
 import MobileNavbar from "./components/mobileNavBar/MobileNavbar";
 import Spinner from "./utils/spinner/Spinner";
 import MobileFooter from "./components/mobileFooter/MobileFooter";
+import ScrollToTopBtn from "./utils/functions/scrollToTopBtn/ScrollToTopBtn";
 
 // public pages
 const Home = lazy(() => import("./pages/HomePage/HomePage"));
 const Register = lazy(() => import("./pages/registrationPage/Register"));
 const Contact = lazy(() => import("./pages/contactPage/ContactPage"));
 const Faq = lazy(() => import("./pages/FaqPage/faq.page"));
-const About = lazy(() => import("./pages/AboutPage/AboutPage"))
+const About = lazy(() => import("./pages/AboutPage/AboutPage"));
 const Frontend = lazy(() =>
   import("./pages/tracksPages/frontendTrack/Frontend")
 );
@@ -29,6 +30,7 @@ const Dashboard = lazy(() => import("./pages/Dashboard/Dashboard.page"));
 function App() {
   return (
     <div className="app">
+      <ScrollToTopBtn />
       <Navbar />
       <MobileNavbar />
       <Suspense fallback={<Spinner />}>
