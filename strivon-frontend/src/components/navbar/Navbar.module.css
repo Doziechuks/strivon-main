@@ -8,9 +8,6 @@
   border-bottom: 2px #1b1b32 solid;
   background-color: #fff;
 }
-.remove {
-  display: none;
-}
 .wrapper {
   width: 100%;
   max-width: 85%;
@@ -43,18 +40,19 @@
 .option {
   /* border: 1px red solid; */
   width: 100%;
-  max-width: max-content;
+  max-width: 10rem;
   padding: 0 1rem;
   color: #1b1b32;
   text-transform: capitalize;
   font-size: 1.3rem;
+  text-align: center;
   /* transition: all 0.5s ease-in-out; */
   cursor: pointer;
 }
 .trackOptions {
   /* border: 1px red solid; */
   width: 100%;
-  max-width: max-content;
+  max-width: 10rem;
   padding: 0 1rem;
   color: #1b1b32;
   text-transform: capitalize;
@@ -64,6 +62,25 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  user-select: none;
+  position: relative;
+}
+.trackBox {
+  /* border: 1px red solid; */
+  width: 100%;
+  max-width: 20rem;
+  background-color: whitesmoke;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 1.8rem;
+  padding: 1rem 0;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+.trackOptions:hover .trackBox {
+  display: flex;
 }
 .active {
   font-weight: 700;
@@ -83,21 +100,7 @@
   text-transform: capitalize;
   font-size: 1.3rem;
 }
-.trackBox {
-  width: 100%;
-  max-width: 12rem;
-  background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  position: fixed;
-  top: -10rem;
-  right: 44%;
-  padding: 1rem 0;
-  z-index: 1;
-  transition: all 0.5s ease-in-out;
-}
-.showOptions {
+/* .showOptions {
   width: 100%;
   max-width: 12rem;
   background-color: whitesmoke;
@@ -110,16 +113,18 @@
   z-index: 1;
   top: 5.2rem;
   transition: all 0.5s ease-in-out;
-}
+} */
 .trackLink {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   text-transform: capitalize;
-  padding: 0.3rem 1rem;
+  padding: 0.3rem;
 }
 .trackLink:hover {
   background: #fff;
 }
-
+.remove {
+  display: none;
+}
 @media screen and (max-width: 1200px) {
   .container {
     display: none;

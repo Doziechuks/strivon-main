@@ -2,33 +2,33 @@ import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import logo from "../../assets/images/strivon1.png";
 import { Link, useLocation } from "react-router-dom";
-import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { FaAngleDown } from "react-icons/fa";
 
 const Navbar = () => {
   const [pathName, setPathName] = useState("");
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
   const { pathname } = useLocation();
 
-  const handleShowTracks = () => {
-    setShow((prev) => !prev);
-  };
-  useEffect(() => {
-    const handleMouseDown = (event) => {
-      if (!event.target.closest(`.${styles.trackBox}`)) {
-        setShow(false);
-      }
-    };
-    document.addEventListener("mousedown", handleMouseDown);
-    return () => {
-      document.removeEventListener("mousedown", handleMouseDown);
-    };
-  }, []);
+  // const handleShowTracks = () => {
+  //   setShow((prev) => !prev);
+  // };
+  // useEffect(() => {
+  //   const handleMouseDown = (event) => {
+  //     if (!event.target.closest(`.${styles.trackBox}`)) {
+  //       setShow(false);
+  //     }
+  //   };
+  //   document.addEventListener("mousedown", handleMouseDown);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleMouseDown);
+  //   };
+  // }, []);
 
   useEffect(() => {
     setPathName(pathname);
   }, [pathname]);
 
-  console.log({ show });
+  // console.log({ show });
   return (
     <>
       <nav
@@ -64,14 +64,24 @@ const Navbar = () => {
             >
               About
             </Link>
-            <span
+            <div
               className={`${styles.trackOptions} ${
                 pathName.includes("/track") ? styles.active : ""
               }`}
-              onClick={handleShowTracks}
             >
-              Tracks {show ? <FaAngleUp /> : <FaAngleDown />}
-            </span>
+              Tracks <FaAngleDown />
+              <div className={styles.trackBox}>
+                <Link to="/tracks/frontend" className={styles.trackLink}>
+                  frontend Track
+                </Link>
+                <Link to="/tracks/backend" className={styles.trackLink}>
+                  backend Track
+                </Link>
+                <Link to="/tracks/mobileapp" className={styles.trackLink}>
+                  mobile app Track
+                </Link>
+              </div>
+            </div>
             <Link
               to="/faqs"
               className={`${styles.option} ${
@@ -96,19 +106,17 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className={`${show ? styles.showOptions : styles.trackBox}`}>
-        <Link to="/tracks/frontend" className={styles.trackLink}>
-          frontend Track
-        </Link>
-        <Link to="/tracks/backend" className={styles.trackLink}>
-          backend Track
-        </Link>
-        <Link to="/tracks/mobileapp" className={styles.trackLink}>
-          mobile app Track
-        </Link>
-      </div>
     </>
   );
 };
 
 export default Navbar;
+// ${show ? styles.showOptions : styles.trackBox}
+//  <div
+//    className={`${styles.trackOptions} ${
+//      pathName.includes("/track") ? styles.active : ""
+//    }`}
+//    onClick={handleShowTracks}
+//  >
+//    Tracks {show ? <FaAngleUp /> : <FaAngleDown />}
+//  </div>;
