@@ -162,6 +162,7 @@
   .container .header {
     height: 10rem;
     margin-bottom: 2rem;
+    padding: 0 1rem;
   }
   .header .title {
     font-size: 1.2rem;
