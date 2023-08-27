@@ -6,8 +6,17 @@ import { FaAngleDown } from "react-icons/fa";
 
 const Navbar = () => {
   const [pathName, setPathName] = useState("");
-  // const [show, setShow] = useState(false);
+  const [showTracks, setShowTracks] = useState(false);
   const { pathname } = useLocation();
+
+  const handleShowTracks = () => {
+    setShowTracks(true);
+  };
+  const handleCloseTracks = () => {
+    if (showTracks) {
+      setShowTracks(false);
+    }
+  };
 
   // const handleShowTracks = () => {
   //   setShow((prev) => !prev);
@@ -68,19 +77,10 @@ const Navbar = () => {
               className={`${styles.trackOptions} ${
                 pathName.includes("/track") ? styles.active : ""
               }`}
+              onMouseOver={handleShowTracks}
+              onMouseOut={handleCloseTracks}
             >
               Tracks <FaAngleDown />
-              <div className={styles.trackBox}>
-                <Link to="/tracks/frontend" className={styles.trackLink}>
-                  frontend Track
-                </Link>
-                <Link to="/tracks/backend" className={styles.trackLink}>
-                  backend Track
-                </Link>
-                <Link to="/tracks/mobileapp" className={styles.trackLink}>
-                  mobile app Track
-                </Link>
-              </div>
             </div>
             <Link
               to="/faqs"
@@ -106,6 +106,17 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <div className={`${styles.trackBox} ${showTracks && styles.showOptions}`}>
+        <Link to="/tracks/frontend" className={styles.trackLink}>
+          frontend Track
+        </Link>
+        <Link to="/tracks/backend" className={styles.trackLink}>
+          backend Track
+        </Link>
+        <Link to="/tracks/mobileapp" className={styles.trackLink}>
+          mobile app Track
+        </Link>
+      </div>
     </>
   );
 };

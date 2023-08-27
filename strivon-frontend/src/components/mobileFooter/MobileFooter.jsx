@@ -8,6 +8,7 @@ import twitter from "../../assets/icons/i.fi-social-twitter.svg";
 import linkedin from "../../assets/icons/i.fi-social-linkedin.svg";
 import email from "../../assets/icons/icon-email.svg";
 import phone from "../../assets/icons/icon-phone.svg";
+import { handleScrollTop } from "../../utils/functions/scrollToTop";
 
 const MobileFooter = () => {
   const [pathName, setPathName] = useState("");
@@ -45,24 +46,44 @@ const MobileFooter = () => {
             </div>
           </div>
           <div className={`${styles.box2} ${styles.mobileBox}`}>
-            <Link to="/aboutus" className={styles.link}>
+            <Link
+              to="/aboutus"
+              className={styles.link}
+              onClick={handleScrollTop}
+            >
               about
             </Link>
-            <Link to="/faqs" className={styles.link}>
+            <Link to="/faqs" className={styles.link} onClick={handleScrollTop}>
               FAQs
             </Link>
-            <Link to="/contactus" className={styles.link}>
+            <Link
+              to="/contactus"
+              className={styles.link}
+              onClick={handleScrollTop}
+            >
               contact us
             </Link>
           </div>
           <div className={styles.box2}>
-            <Link to="/tracks/frontend" className={styles.link}>
+            <Link
+              to="/tracks/frontend"
+              className={styles.link}
+              onClick={handleScrollTop}
+            >
               frontend track
             </Link>
-            <Link to="/tracks/backend" className={styles.link}>
+            <Link
+              to="/tracks/backend"
+              className={styles.link}
+              onClick={handleScrollTop}
+            >
               backend track
             </Link>
-            <Link to="/tracks/mobileapp" className={styles.link}>
+            <Link
+              to="/tracks/mobileapp"
+              className={styles.link}
+              onClick={handleScrollTop}
+            >
               mobile app track
             </Link>
           </div>

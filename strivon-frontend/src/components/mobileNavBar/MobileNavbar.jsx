@@ -4,6 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import logo from "../../assets/images/strivon1.png";
 import { Link, useLocation } from "react-router-dom";
+import { handleScrollTop } from "../../utils/functions/scrollToTop";
 
 const MobileNavbar = () => {
   const [open, setOpen] = useState(false);
@@ -11,6 +12,7 @@ const MobileNavbar = () => {
   const { pathname } = useLocation();
   const handleOpen = () => {
     setOpen((prev) => !prev);
+    handleScrollTop();
   };
   useEffect(() => {
     const handleMouseDown = (event) => {
