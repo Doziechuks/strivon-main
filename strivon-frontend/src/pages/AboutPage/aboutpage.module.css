@@ -15,7 +15,6 @@
 /* #1b1b32 */
 .top {
     height: 10rem;
-    background: linear-gradient(to right, #1b1b32, yellow);
     color: #f9a12e;
     display: flex;
     align-items: center;
@@ -24,23 +23,34 @@
     font-family: 'Tangerine', cursive;
 
 }
-.boxcon{
+.boxcon, .boxcon2{
     /* border: 1px solid #000; */
-    width: 8rem;
-    height: 8rem;
+    
+    width: 5rem;
+    height: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+.rotate{
+    transform: rotate(15deg);
 }
 .box1, .box2, .box3, .box3{
     /* border: 1px solid #000; */
-    width: 4rem;
-    height: 4rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 .box2{
     background-color: #f9a12e;
 }
 .box3{
     background-color: #1b1b32;
+}
+.box5{
+    background-color: #1b1b32;
+}
+.box8{
+    background-color: #f9a12e;
 }
 .second{
     display: flex;

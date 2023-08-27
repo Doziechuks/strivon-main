@@ -28,11 +28,11 @@ const AboutPage = () => {
             <div className={styles.box3}></div>
             <div className={styles.box4}></div>
           </div>
-          <div className={styles.boxcon}>
-            <div className={styles.box1}></div>
-            <div className={styles.box2}></div>
-            <div className={styles.box3}></div>
-            <div className={styles.box4}></div>
+          <div className={`${styles.boxcon2} ${styles.rotate}`}>
+            <div className={styles.box5}></div>
+            <div className={styles.box6}></div>
+            <div className={styles.box7}></div>
+            <div className={styles.box8}></div>
           </div>
         </div>
         <section className={styles.wrapper}>
