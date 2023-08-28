@@ -17,9 +17,10 @@ const AboutPage = () => {
       <section className={styles.inner}>
         <div
           className={styles.top}
-          style={{ backgroundImage: `url(${bg})`, backgroundSize: "100%" }}
+          
         >
-          Strive For Mastery...
+          <img src={bg} alt='' />
+         <h1>Strive For Mastery...</h1> 
         </div>
         <div className={styles.second}>
           <div className={styles.boxcon}>
