@@ -5,7 +5,8 @@
   position: sticky;
   top: 0;
   z-index: 2;
-  border-bottom: 2px #1b1b32 solid;
+  /* border-bottom: 2px #1b1b32 solid; */
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
   background-color: #fff;
 }
 .remove {
@@ -113,6 +114,7 @@
   padding: 1rem 0;
   z-index: 1;
   transition: all 0.5s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .showOptions {
   top: 5.3rem;
