@@ -1,8 +1,9 @@
 import React from "react";
-import styles from "../customstyle.module.css";
-import { trackData } from "../aboutTrackData";
-import CustomTrack from "../../../utils/customTrack/CustomTrack";
+import styles from "./customstyle.module.css";
+import { trackData } from "./aboutTrackData";
+import CustomTrack from "../../utils/customTrack/CustomTrack";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
+import backendImage from "../../assets/images/backend track.jpg";
 
 const Backend = () => {
   const { backend } = trackData;
@@ -16,6 +17,7 @@ const Backend = () => {
         track1="see frontend track"
         link2="/tracks/mobileapp"
         track2="see mobileApp track"
+        image={backendImage}
       >
         {backend.courses.map((course, id) => (
           <div className={styles.learnCard} key={id}>

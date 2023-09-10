@@ -15,13 +15,9 @@ const Register = lazy(() => import("./pages/registrationPage/Register"));
 const Contact = lazy(() => import("./pages/contactPage/ContactPage"));
 const Faq = lazy(() => import("./pages/FaqPage/faq.page"));
 const About = lazy(() => import("./pages/AboutPage/AboutPage"));
-const Frontend = lazy(() =>
-  import("./pages/tracksPages/frontendTrack/Frontend")
-);
-const Backend = lazy(() => import("./pages/tracksPages/backendTrack/Backend"));
-const MobileApp = lazy(() =>
-  import("./pages/tracksPages/mobileAppTrack/MobileApp")
-);
+const Frontend = lazy(() => import("./pages/tracksPages/Frontend"));
+const Backend = lazy(() => import("./pages/tracksPages/Backend"));
+const MobileApp = lazy(() => import("./pages/tracksPages/MobileApp"));
 
 // protect routes
 const Login = lazy(() => import("./pages/loginPage/Login"));

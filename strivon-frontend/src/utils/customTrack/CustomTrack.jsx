@@ -1,12 +1,20 @@
 import React from "react";
 import styles from "./CustomTrack.module.css";
 import { Link } from "react-router-dom";
-import frontend from "../../assets/images/frontend.avif";
 import { handleScrollTop } from "../functions/scrollToTop";
 
 const CustomTrack = (props) => {
-  const { title, subtitle, about, track1, track2, link1, link2, children } =
-    props;
+  const {
+    title,
+    subtitle,
+    about,
+    track1,
+    track2,
+    image,
+    link1,
+    link2,
+    children,
+  } = props;
 
   return (
     <main className={styles.container}>
@@ -20,7 +28,7 @@ const CustomTrack = (props) => {
             <p className={styles.info}>{about}</p>
           </div>
           <div className={styles.imgwrapper}>
-            <img src={frontend} alt="frontend" />
+            <img src={image} alt="frontend" />
           </div>
         </div>
       </section>
