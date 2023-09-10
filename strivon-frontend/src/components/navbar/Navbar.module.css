@@ -79,7 +79,8 @@
   text-align: center;
 }
 .trackLink:hover {
-  background: #fff;
+  background: #f9a12e;
+  color: white;
 }
 .active {
   font-weight: 700;
