@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   padding: 4rem 0.5rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 .title {
   border-right: 2px #1b1b32 solid;
@@ -98,7 +98,7 @@
   align-items: center;
   justify-content: center;
   height: 3rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
   transition: all 0.5s ease-in;
 }
@@ -118,6 +118,22 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title span {
+    font-size: 1.5rem;
+  }
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+
+    10%,
+    100% {
+      width: 8.5rem;
+    }
+  }
   .wrapper {
     max-width: 100%;
     display: flex;
@@ -129,6 +145,9 @@
   }
   .box:first-child {
     margin-bottom: 2.5rem;
+  }
+  .box h5 {
+    font-size: 1.2rem;
   }
   .box p {
     font-size: 0.9rem;
