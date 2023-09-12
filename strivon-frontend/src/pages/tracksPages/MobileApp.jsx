@@ -10,7 +10,8 @@ const MobileApp = () => {
   return (
     <>
       <CustomTrack
-        title="Become a certified Mobile App Developer"
+        title="Become a certified "
+        title2="Mobile App Developer"
         subtitle="who is a mobile app developer"
         about={mobileApp.about}
         link1="/tracks/frontend"

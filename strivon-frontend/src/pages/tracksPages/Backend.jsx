@@ -10,7 +10,8 @@ const Backend = () => {
   return (
     <>
       <CustomTrack
-        title="Become a certified Backend Developer"
+        title="Become a certified "
+        title2="Backend Developer"
         subtitle="who is a backend developer"
         about={backend.about}
         link1="/tracks/frontend"

@@ -35,7 +35,6 @@ function App() {
           <Route exact path="/contactus" element={<Contact />} />
           <Route exact path="/about" element={<About />} />
           <Route path="/apply" element={<Register />} />
-
           <Route exact path="/faqs" element={<Faq />} />
           <Route path="/tracks">
             <Route path="frontend" element={<Frontend />} />

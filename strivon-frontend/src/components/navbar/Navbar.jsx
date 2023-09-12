@@ -106,7 +106,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className={`${styles.trackBox} ${showTracks && styles.showOptions}`} onMouseOver={handleShowTracks} >
+      <div className={`${styles.trackBox} ${showTracks && styles.showOptions}`} >
         <Link to="/tracks/frontend" className={styles.trackLink}>
           frontend Track
         </Link>

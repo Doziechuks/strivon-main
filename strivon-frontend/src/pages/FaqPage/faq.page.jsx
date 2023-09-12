@@ -1,5 +1,6 @@
 import styles from "./faq.module.css";
 import According from "../../utils/accordion/According";
+import CustomTrack from '../../utils/customTrack/CustomTrack'
 
 import React, { useEffect } from "react";
 import { Seo } from "../../utils/seo";
@@ -14,8 +15,14 @@ const Faq = () => {
   }, []);
   return (
     <main className={styles.container}>
+     <div className={styles.header}>
+          <h1 className={styles.title}>
+            Frequently Asked <span>Questions</span>{" "}
+          </h1>
+        </div>
       <div className={styles.wrap}>
-        <h2>Frequently Asked Questions</h2>
+        {/* <CustomTrack title="Frequently Asked Questions"/> */}
+        <h2>FAQs</h2>
         <According
           question="Can you tell me about Strivon Academy?"
           answer="Strivon Academy is an elite software engineering and leadership training institute that equips high potential talent with world-class software engineering and leadership skills. We also offer practical exposure to real-life projects through internships."

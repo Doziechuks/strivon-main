@@ -6,6 +6,7 @@ import { handleScrollTop } from "../functions/scrollToTop";
 const CustomTrack = (props) => {
   const {
     title,
+    title2,
     subtitle,
     about,
     track1,
@@ -19,7 +20,7 @@ const CustomTrack = (props) => {
   return (
     <main className={styles.container}>
       <header className={styles.header}>
-        <h1 className={styles.title}>{title}</h1>
+        <h1 className={styles.title}>{title}<span className={styles.title2}>{title2}</span></h1>
       </header>
       <section className={styles.wrapper}>
         <h3>{subtitle}?</h3>

@@ -15,31 +15,30 @@ const AboutPage = () => {
   return (
     <main className={styles.container}>
       <section className={styles.inner}>
-        <div
-          className={styles.top}
-          
-        >
-          <img src={bg} alt='' />
-         <h1>Strive For Mastery</h1> 
+        <div className={styles.header}>
+          <h1 className={styles.title}>
+            Learn About <span>Strivon</span>{" "}
+          </h1>
         </div>
-        <div className={styles.second}>
-          <div className={styles.boxcon}>
-            <div className={styles.box1}></div>
-            <div className={styles.box2}></div>
-            <div className={styles.box3}></div>
-            <div className={styles.box4}></div>
-          </div>
-          <div className={`${styles.boxcon2} ${styles.rotate}`}>
-            <div className={styles.box5}></div>
-            <div className={styles.box6}></div>
-            <div className={styles.box7}></div>
-            <div className={styles.box8}></div>
-          </div>
-        </div>
+
         <section className={styles.wrapper}>
           <h3>About Our Institute</h3>
           <div className={styles.aboutSection}>
             <div className={styles.aboutInfo}>
+              <p className={styles.info}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                vitae iure voluptate nam sit laudantium debitis ipsa eos natus
+                deserunt neque nostrum quia, repudiandae architecto dolorum
+                eveniet, qui enim, similique dicta necessitatibus placeat dolore
+                laboriosam praesentium laborum. Laborum, molestias qui.
+              </p>
+              <p className={styles.info}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                vitae iure voluptate nam sit laudantium debitis ipsa eos natus
+                deserunt neque nostrum quia, repudiandae architecto dolorum
+                eveniet, qui enim, similique dicta necessitatibus placeat dolore
+                laboriosam praesentium laborum. Laborum, molestias qui.
+              </p>
               <p className={styles.info}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
                 vitae iure voluptate nam sit laudantium debitis ipsa eos natus

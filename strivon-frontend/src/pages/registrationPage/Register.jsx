@@ -91,7 +91,7 @@ const Register = () => {
             <p>Please fill in your details correctly</p>
           </div>
         </div>
-        <form className={styles.formBox}>
+        <form className={styles.formBox} action="" method="post">
           <CustomInput placeholder="Full name" type="name" required />
           <CustomInput placeholder="email" type="email" required />
           <CustomInput placeholder="phone number" type="number" required />
