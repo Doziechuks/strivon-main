@@ -66,7 +66,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/about"
+              to="/aboutus"
               className={`${styles.option} ${
                 pathName.includes("/about") ? styles.active : ""
               }`}

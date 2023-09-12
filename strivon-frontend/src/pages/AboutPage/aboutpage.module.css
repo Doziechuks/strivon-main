@@ -3,11 +3,18 @@
     height: fit-content;
     display: flex;
     justify-content: center;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .inner {
     width: 100%;
 
+  /* border: 1px solid #000; */
+  width: 85%;
 }
 
 .top {
@@ -19,14 +26,21 @@
     position: relative;
     background-color: rgba(27, 27, 50, 0.8);
 
+  height: 8rem;
+  color: #f9a12e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgba(27, 27, 50, 0.8);
 }
-.top img{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    object-fit: cover;
-    opacity: 0.5;
+.top img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.5;
 }
 .top h1{
     color: white;
@@ -51,20 +65,23 @@
   color: #f9a12e;
   font-size: 2.5rem;
 }
-/* .boxcon, .boxcon2{
+.boxcon, .boxcon2{
+    /* border: 1px solid #000; */
+    
     width: 4rem;
     height: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
-} */
-.rotate{
-    transform: rotate(0deg);
 }
-/* .box1, .box2, .box3, .box3{
+.rotate{
+    transform: rotate(15deg);
+}
+.box1, .box2, .box3, .box3{
+    /* border: 1px solid #000; */
     width: 2rem;
     height: 2rem;
-} */
+}
 .box2{
     background-color: #f9a12e;
 }
@@ -72,11 +89,10 @@
     background-color: #1b1b32;
 }
 .box5{
-    background: linear-gradient(to bottom right, #f9a12e, #1b1b32);
+    background-color: #1b1b32;
 }
 .box8{
     background-color: #f9a12e;
-    background: linear-gradient(to bottom right, #1b1b32, #f9a12e);
 }
 .second{
     display: flex;
@@ -93,12 +109,12 @@
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
   .wrapper .aboutSection {
     width: 100%;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     gap: 6rem;
   }
@@ -119,17 +135,87 @@
     /* transform: rotate(-5deg); */
   }
   .aboutSection .aboutInfo {
+    /* border: 1px red solid; */
     width: 100%;
     max-width: 45rem;
   }
   .aboutInfo .info {
     width: 100%;
-    /* text-align: center; */
+    text-align: justify;
     line-height: 2rem;
     color: #1b1b32;
     font-size: 1.3rem;
   }
-
+  .container .wrapper2 {
+    background-color: whitesmoke;
+    padding: 2rem 0;
+  }
+  .wrapper2 .learnCard {
+    /* border: 1px red solid; */
+    width: 100%;
+    max-width: 28rem;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.3);
+    margin-bottom: 4rem;
+  }
+  .wrapper2 .btnwrapper {
+    /* border: 1px red solid; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btnwrapper .linkBtn,
+  .mobileBtnWrap .linkBtn {
+    /* border: 1px red solid; */
+    width: 100%;
+    max-width: 13rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #1b1b32;
+    transition: all 0.2s ease-in-out;
+  }
+  .btnwrapper .linkBtn:hover {
+    background-color: #31316e;
+  }
+  .btnwrapper .linkBtn:nth-child(even) {
+    margin: 0 2rem;
+    max-width: 10rem;
+  }
+  .wrapper2 .mobileBtnWrap {
+    display: none;
+  }
+  .mobileBtnWrap > .linkBtn {
+    max-width: 8rem;
+    height: 2.3rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .mobileBtnWrap .otherTracks {
+    /* border: 1px red solid; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .otherTracks .linkBtn {
+    max-width: 13rem;
+    height: 2.3rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .otherTracks .linkBtn:first-child {
+    margin-right: 1rem;
+  }
   @media screen and (max-width: 1200px) {
     .wrapper .aboutSection {
       flex-direction: column-reverse;
@@ -183,7 +269,14 @@
     .aboutInfo .info {
       font-size: 0.9rem;
     }
-
+    .container .wrapper2 {
+      margin-bottom: 0;
+      padding: 2rem 1rem;
+    }
+    .wrapper2 .learnCard {
+      max-width: 30rem;
+      margin-bottom: 3rem;
+    }
   }
   @media screen and (max-width: 600px) {
     .aboutSection .imgwrapper {

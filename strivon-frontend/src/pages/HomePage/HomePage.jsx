@@ -4,6 +4,7 @@ import { Seo } from "../../utils/seo";
 
 import Heading from "../../components/heading/Heading";
 import About from "../../components/about/About";
+import Tracks from "../../components/tracks/Tracks";
 
 const HomePage = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const HomePage = () => {
     <main className={styles.container}>
       <Heading />
       <About />
+      <Tracks />
     </main>
   );
 };
