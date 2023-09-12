@@ -29,6 +29,7 @@ const CustomTrack = (props) => {
           </div>
           <div className={styles.imgwrapper}>
             <img src={image} alt="frontend" />
+            {/* <h1>test</h1> */}
           </div>
         </div>
       </section>

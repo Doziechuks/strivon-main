@@ -1,0 +1,136 @@
+.container {
+  width: 100%;
+  /* border: 1px red solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0.5rem;
+  margin-bottom: 2rem;
+}
+.title {
+  border-right: 2px #1b1b32 solid;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 2.3rem;
+  line-height: 2rem;
+  font-family: sans-serif;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  padding-right: 0.1rem;
+  animation: typing 10s steps(16, end) infinite, blinking 700ms infinite linear;
+}
+.title span {
+  color: #f9a12e;
+  font-family: sans-serif;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  10%,
+  100% {
+    width: 12.5rem;
+  }
+}
+@keyframes blinking {
+  0% {
+    border-color: transparent;
+  }
+
+  30%,
+  70% {
+    border-color: #1b1b32;
+  }
+
+  100% {
+    border-color: transparent;
+  }
+}
+
+.wrapper {
+  /* border: 1px red solid; */
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.box {
+  border: 1px #f9a12e solid;
+  width: 100%;
+  max-width: 50%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #1b1b32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box h5 {
+  color: #f9a12e;
+  margin-bottom: 1.3rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.box p {
+  color: #fff;
+  text-align: justify;
+  font-size: 1.13rem;
+  line-height: 1.75rem;
+  font-family: sans-serif;
+  margin-bottom: 1.3rem;
+}
+.box .btn {
+  width: 100%;
+  max-width: 10rem;
+  border-radius: 0.3rem;
+  background: #fff;
+  color: #1b1b32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  transition: all 0.5s ease-in;
+}
+.box .btn:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+@media screen and (max-width: 1210px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .wrapper {
+    max-width: 100%;
+  }
+  .box {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .box {
+    max-width: 100%;
+  }
+  .box:first-child {
+    margin-bottom: 2.5rem;
+  }
+  .box p {
+    font-size: 0.9rem;
+  }
+}

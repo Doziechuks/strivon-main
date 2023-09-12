@@ -9,18 +9,15 @@ const AboutPage = () => {
   useEffect(() => {
     Seo({
       title: "About || Strivon Academy",
-      metaDescription: "Learn about Strivon",
+      metaDescription: "Learn about Strivon Academy",
     });
   }, []);
   return (
     <main className={styles.container}>
       <section className={styles.inner}>
-        <div
-          className={styles.top}
-          
-        >
-          <img src={bg} alt='' />
-         <h1>Strive For Mastery...</h1> 
+        <div className={styles.top}>
+          <img src={bg} alt="" />
+          <h1>Strive For Mastery...</h1>
         </div>
         <div className={styles.second}>
           <div className={styles.boxcon}>
