@@ -49,9 +49,13 @@
   display: none;
 }
 .navOptions .linkOption {
+  /* border: 1px red solid; */
   padding: 0 1.5rem;
   text-transform: capitalize;
   font-size: 1.4rem;
+}
+.navOptions .linkOption:first-child {
+  margin-top: 1rem;
 }
 .navOptions .line {
   border-bottom: 1px lightgray dotted;
