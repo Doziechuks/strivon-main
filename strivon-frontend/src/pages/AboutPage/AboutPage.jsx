@@ -15,7 +15,11 @@ const AboutPage = () => {
   return (
     <main className={styles.container}>
       <section className={styles.inner}>
-
+      <div className={styles.header}>
+          <h1 className={styles.title}>
+            Learn About <span>Strivon</span>{" "}
+          </h1>
+        </div>
         <section className={styles.wrapper}>
           <h3>About Our Institute</h3>
           <div className={styles.aboutSection}>
