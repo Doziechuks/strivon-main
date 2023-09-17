@@ -31,6 +31,7 @@
 .header .title span{
   color: #f9a12e;
   font-size: 2.5rem;
+  font-family: "Ubuntu", "Lexend", sans-serif;
 }
 
   .container .wrapper {
@@ -38,6 +39,7 @@
     padding: 5rem 0;
   }
   .wrapper > h3 {
+    background: linear-gradient(to right, rgba(249, 161, 46, 0.4), rgba(249, 161, 46, 0.1));
     width: 100%;
     text-align: center;
     font-size: 2rem;

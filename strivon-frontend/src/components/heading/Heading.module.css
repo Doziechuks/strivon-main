@@ -33,7 +33,7 @@
 .title span {
   /* color: #f9a12e; */
   font-family: "Ubuntu", "Lexend";
-    background: linear-gradient(to right, #f9a12e, #1b1b32);
+    background: linear-gradient(to left, #f9a12e, #1b1b32);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }

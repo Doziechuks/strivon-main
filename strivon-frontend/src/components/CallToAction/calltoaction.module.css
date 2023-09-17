@@ -1,18 +1,19 @@
 .container {
-    /* border: 1px solid 300; */
     height: 25rem;
     background:
-    radial-gradient(circle at 10% 10%, #f9a12e, transparent 60%),
-    radial-gradient(circle at 90% 90%, #f9a12e, transparent 60%),
-    linear-gradient(45deg, #f0a037, rgba(27, 27, 50, 0.5));
-  background-blend-mode: overlay, overlay, normal;
-  background-size: 5px 5px, 5px 5px, auto;
-    /* background: ; */
+        radial-gradient(circle at 10% 10%, #f9a12e, transparent 60%),
+        radial-gradient(circle at 90% 90%, #f9a12e, transparent 60%),
+        linear-gradient(45deg, #f0a037, rgba(27, 27, 50, 0.5));
+    background-blend-mode: overlay, overlay, normal;
+    background-size: 5px 5px, 5px 5px, auto;
+    /* background: linear-gradient(to right, rgba(249, 161, 46, 0.6), rgba(249, 161, 46, 0.8)); */
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.wrapper{
+
+.wrapper {
     width: 60%;
     height: 70%;
     font-family: 'Ubuntu', sans-serif;
@@ -20,46 +21,56 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    
+
 
 }
-.wrapper h1{
+
+.wrapper h1 {
     color: azure;
     font-size: 3rem;
 }
 
-.wrapper p{
+.wrapper p {
     font-size: 1.13rem;
     font-weight: 400;
 }
-.wrapper .p{
+
+.wrapper .p {
     font-weight: 700;
+    color: rgb(27, 27, 50);
+    /* color: red; */
 }
-.wrapper h1, .wrapper p, .register{
+
+.wrapper h1,
+.wrapper p,
+.register {
     font-family: 'Ubuntu', sans-serif;
 }
+
 .loginBox {
     width: 100%;
     max-width: max-content;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .register {
+}
+
+.register {
     background: linear-gradient(to right, rgb(27, 27, 50), rgba(27, 27, 50, 0.9));
     padding: 0.7rem 1rem;
-    border-radius: 3rem;
+    border-radius: 0.5rem;
     color: #fff;
     text-transform: capitalize;
     font-size: 1.3rem;
-  }
+}
 
-  @media screen and (max-width:600px) {
-    .wrapper{
+@media screen and (max-width:600px) {
+    .wrapper {
         width: 100%;
         margin: 0 5%;
     }
-    .wrapper h1{
+
+    .wrapper h1 {
         font-size: 2rem;
     }
-  }
+}

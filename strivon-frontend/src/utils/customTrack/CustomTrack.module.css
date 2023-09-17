@@ -12,16 +12,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background:
+        radial-gradient(circle at 10% 10%, #f9a12e, transparent 60%),
+        radial-gradient(circle at 90% 90%, #f9a12e, transparent 60%),
+        linear-gradient(45deg, #f0a037, rgba(27, 27, 50, 0.5));
+    background-blend-mode: overlay, overlay, normal;
+    background-size: 5px 5px, 5px 5px, auto; */
   background: linear-gradient(to right, #1b1b32, #31316e);
 }
 .header .title {
   color: #fff;
-  text-transform: capitalize;
-  font-size: 4.5rem;
-  font-family: "Tangerine", cursive;
+  font-size: 2.5rem;
+  
 }
 .header .title2{
   color: #f9a12e;
+  font-family: "Ubuntu", "Lexend", sans-serif;
 }
 .container .wrapper {
   width: 100%;

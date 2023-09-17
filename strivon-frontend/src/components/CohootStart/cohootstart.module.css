@@ -13,6 +13,7 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 1rem;
     background: linear-gradient(to right, rgba(249, 161, 46, 0.4), rgba(249, 161, 46, 0.1));
+    /* background-color: #fffaea; */
     display: flex;
 
     /* background:
@@ -97,6 +98,14 @@
     font-weight: 300
 }
 
+@media screen and (max-width:1210px) {
+    .container {
+        height: 25rem;
+    }
+    .wrapper{
+        height: 20rem;
+    }
+}
 @media screen and (max-width:600px) {
     .container {
         height: 32rem;

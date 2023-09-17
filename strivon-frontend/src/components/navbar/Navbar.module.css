@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  height: 5rem;
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -13,6 +14,7 @@
 .wrapper {
   width: 100%;
   max-width: 85%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -31,7 +33,7 @@
   height: 100%;
 }
 .linkBox {
-  /* border: 1px red solid; */
+  height: 100%;
   width: 100%;
   max-width: 60%;
   display: flex;
@@ -52,7 +54,7 @@
   cursor: pointer;
 }
 .trackOptions {
-  /* border: 1px red solid; */
+  height: 100%;
   width: 100%;
   max-width: max-content;
   padding: 0 1rem;
@@ -102,7 +104,7 @@
 .trackBox {
   width: 100%;
   max-width: 10rem;
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 0.3rem;
   display: flex;
   flex-direction: column;
@@ -116,7 +118,8 @@
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
 }
 .showOptions {
-  top: 5.3rem;
+  top: 4rem;
+  z-index: 5;
 }
 @media screen and (max-width: 1200px) {
   .container {
