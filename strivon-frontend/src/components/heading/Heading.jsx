@@ -10,7 +10,7 @@ const Heading = () => {
     <section className={styles.container}>
       <img src={backgound} alt="" className={styles.background} />
       <h1 className={styles.title}>
-        welcome to <span>strivon academy</span>, start your journey towards tech
+        welcome to <span>strivon academy</span> <br/> start your journey towards tech
         mastery.
       </h1>
       <p className={styles.info}>

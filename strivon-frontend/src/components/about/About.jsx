@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./About.module.css";
 import frontend from "../../assets/images/frontend.avif";
+import strive from "../../assets/images/strivon-graphics2.png";
 import { Link } from "react-router-dom";
 import { handleScrollTop } from "../../utils/functions/scrollToTop";
 
@@ -38,7 +39,7 @@ const About = () => {
             isVisibleMobile1 && styles.showMobile
           }`}
         >
-          <img src={frontend} alt="frontend" />
+          <img src={strive} alt="frontend" />
         </div>
         <div
           className={`${styles.box2} ${isVisible && styles.show} ${

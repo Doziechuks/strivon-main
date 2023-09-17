@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Seo } from "../../utils/seo";
 import bg from "../../assets/images/aboutbg.jpg";
 import frontend from "../../assets/images/frontend.avif";
+import strive from '../../assets/images/strivon-graphics.jpg'
 import CustomTrack from "../../utils/customTrack/CustomTrack";
 
 const AboutPage = () => {
@@ -47,7 +48,7 @@ const AboutPage = () => {
               </p>
             </div>
             <div className={styles.imgwrapper}>
-              <img src={frontend} alt="frontend" />
+              <img src={strive} alt="frontend" />
             </div>
           </div>
         </section>

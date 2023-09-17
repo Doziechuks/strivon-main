@@ -8,6 +8,7 @@
   padding: 4rem 0.5rem;
   margin: 2rem 0;
 }
+
 .title {
   border-right: 2px #1b1b32 solid;
   width: 0;
@@ -17,10 +18,11 @@
   line-height: 2rem;
   font-family: sans-serif;
   margin: 0 auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   padding-right: 0.1rem;
   animation: typing 10s steps(16, end) infinite, blinking 700ms infinite linear;
 }
+
 .title span {
   color: #f9a12e;
   font-family: sans-serif;
@@ -36,6 +38,7 @@
     width: 12.5rem;
   }
 }
+
 @keyframes blinking {
   0% {
     border-color: transparent;
@@ -61,6 +64,108 @@
   justify-content: center;
   gap: 1.5rem;
 }
+
+.wrapper2 {
+  /* border: 1px solid #000; */
+  width: 100%;
+  max-width: 80%;
+  height: 33rem;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.card {
+  width: 100%;
+  max-width: 30%;
+  height: 32rem;
+  border-radius: 1.1rem;
+  background: radial-gradient(circle, #f0f0f8, #fcfbfa);
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.imgcontainer {
+  border-radius: 0.6rem 0.6rem 0 0;
+  width: 94%;
+  height: 16rem;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.imgcontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border: 1px solid #000; */
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card h3 {
+  width: 55%;
+  font-size: 1.3rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: rgba(27, 27, 50, 0.9);
+  text-align: center;
+  margin: 1.5rem auto;
+
+}
+
+.card p {
+  width: 100%;
+  font-size: 1.13rem;
+  max-width: 80%;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 100;
+
+  color: rgba(27, 27, 50, 0.7);
+  margin: 0 auto;
+}
+
+/* .card .viewmore{
+  border: 2px solid rgb(27, 27, 50);
+  max-width: 7rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300; */
+.btn {
+  width: 100%;
+  max-width: 9rem;
+  text-align: center;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: linear-gradient(to right, rgb(27, 27, 50), rgba(27, 27, 50, 0.9));
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.3);
+  margin: 1.5rem auto;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  z-index: 2;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300
+}
+
+.btn:hover {
+  background-color: rgba(27, 27, 50, 1);
+}
+
 .box {
   border: 1px #f9a12e solid;
   width: 100%;
@@ -73,6 +178,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .box h5 {
   color: #f9a12e;
   margin-bottom: 1.3rem;
@@ -80,6 +186,7 @@
   font-weight: 500;
   font-size: 1.5rem;
 }
+
 .box p {
   color: #fff;
   text-align: justify;
@@ -88,6 +195,7 @@
   font-family: sans-serif;
   margin-bottom: 1.3rem;
 }
+
 .box .btn {
   width: 100%;
   max-width: 10rem;
@@ -102,28 +210,35 @@
   text-transform: capitalize;
   transition: all 0.5s ease-in;
 }
+
 .box .btn:hover {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
+
 @media screen and (max-width: 1210px) {
   .container {
     padding: 0 1rem;
   }
+
   .wrapper {
     max-width: 100%;
   }
+
   .box {
     max-width: 50%;
   }
 }
+
 @media screen and (max-width: 600px) {
   .title {
     font-size: 1.5rem;
   }
+
   .title span {
     font-size: 1.5rem;
   }
+
   @keyframes typing {
     0% {
       width: 0;
@@ -134,22 +249,53 @@
       width: 8rem;
     }
   }
+
   .wrapper {
     max-width: 100%;
     display: flex;
     flex-direction: column;
     gap: 0;
   }
+
+  .wrapper2 {
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .card p {
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 0 5%;
+  }
+
+  .imgcontainer img {
+    object-fit: fill;
+  }
+
   .box {
     max-width: 100%;
   }
+
   .box:first-child {
     margin-bottom: 2.5rem;
   }
+
   .box h5 {
     font-size: 1.2rem;
   }
+
   .box p {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper2 {
+    max-width: 100%;
   }
 }
