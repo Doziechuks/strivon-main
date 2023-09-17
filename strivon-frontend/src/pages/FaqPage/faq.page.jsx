@@ -22,7 +22,7 @@ const Faq = () => {
         </div>
       <div className={styles.wrap}>
         {/* <CustomTrack title="Frequently Asked Questions"/> */}
-        <h2>FAQs</h2>
+        <h2>We Answer Your Questions</h2>
         <According
           question="Can you tell me about Strivon Academy?"
           answer="Strivon Academy is an elite software engineering and leadership training institute that equips high potential talent with world-class software engineering and leadership skills. We also offer practical exposure to real-life projects through internships."
