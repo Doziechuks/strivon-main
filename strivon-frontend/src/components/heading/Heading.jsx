@@ -11,7 +11,7 @@ const Heading = () => {
       <img src={backgound} alt="" className={styles.background} />
       <h1 className={styles.title}>
         welcome to <span>strivon academy</span> <br/> start your journey towards tech
-        mastery.
+        mastery
       </h1>
       <p className={styles.info}>
         We make sure you gain enough mastery that will help you excel in the
