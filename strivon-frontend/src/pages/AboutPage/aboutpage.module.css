@@ -1,8 +1,8 @@
 .container {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: fit-content;
   display: flex;
@@ -11,7 +11,7 @@
 }
 
 .inner {
-    width: 100%;
+  width: 100%;
 }
 
 
@@ -23,210 +23,245 @@
   justify-content: center;
   background: linear-gradient(to right, #1b1b32, #31316e);
 }
+
 .header .title {
   color: #fff;
   text-transform: capitalize;
   font-size: 2.5rem;
 }
-.header .title span{
+
+.header .title span {
   color: #f9a12e;
   font-size: 2.5rem;
   font-family: "Ubuntu", "Lexend", sans-serif;
 }
 
-  .container .wrapper {
-    width: 100%;
-    padding: 5rem 0;
-  }
-  .wrapper > h3 {
-    background: linear-gradient(to right, rgba(249, 161, 46, 0.4), rgba(249, 161, 46, 0.1));
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-  }
+.container .wrapper {
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.wrapper>h3 {
+  background: linear-gradient(to right, rgba(249, 161, 46, 0.4), rgba(249, 161, 46, 0.1));
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.wrapper .aboutSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.aboutSection .imgwrapper {
+  /* border: 1px red solid; */
+  width: 100%;
+  max-width: 30rem;
+  height: 30rem;
+  border-radius: 1rem;
+  transform: rotate(-5deg);
+  overflow: hidden;
+}
+
+.imgwrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  /* transform: rotate(-5deg); */
+}
+
+.aboutSection .aboutInfo {
+  /* border: 1px red solid; */
+  width: 100%;
+  max-width: 45rem;
+}
+
+.aboutInfo .info {
+  width: 100%;
+  text-align: justify;
+  line-height: 2rem;
+  color: #1b1b32;
+  font-size: 1.3rem;
+}
+
+.container .wrapper2 {
+  background-color: whitesmoke;
+  padding: 2rem 0;
+}
+
+.wrapper2 .learnCard {
+  /* border: 1px red solid; */
+  width: 100%;
+  max-width: 28rem;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.3);
+  margin-bottom: 4rem;
+}
+
+.wrapper2 .btnwrapper {
+  /* border: 1px red solid; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnwrapper .linkBtn,
+.mobileBtnWrap .linkBtn {
+  /* border: 1px red solid; */
+  width: 100%;
+  max-width: 13rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #1b1b32;
+  transition: all 0.2s ease-in-out;
+}
+
+.btnwrapper .linkBtn:hover {
+  background-color: #31316e;
+}
+
+.btnwrapper .linkBtn:nth-child(even) {
+  margin: 0 2rem;
+  max-width: 10rem;
+}
+
+.wrapper2 .mobileBtnWrap {
+  display: none;
+}
+
+.mobileBtnWrap>.linkBtn {
+  max-width: 8rem;
+  height: 2.3rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.mobileBtnWrap .otherTracks {
+  /* border: 1px red solid; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.otherTracks .linkBtn {
+  max-width: 13rem;
+  height: 2.3rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.otherTracks .linkBtn:first-child {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
   .wrapper .aboutSection {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6rem;
+    flex-direction: column-reverse;
+    gap: 0rem;
   }
+
   .aboutSection .imgwrapper {
-    /* border: 1px red solid; */
-    width: 100%;
-    max-width: 30rem;
-    height: 30rem;
-    border-radius: 1rem;
-    transform: rotate(-5deg);
-    overflow: hidden;
+    height: 40rem;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    transform: rotate(0deg);
   }
-  .imgwrapper img {
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    object-fit: cover;
-    /* transform: rotate(-5deg); */
-  }
+
   .aboutSection .aboutInfo {
-    /* border: 1px red solid; */
-    width: 100%;
-    max-width: 45rem;
+    max-width: 100%;
   }
-  .aboutInfo .info {
-    width: 100%;
-    text-align: justify;
-    line-height: 2rem;
-    color: #1b1b32;
-    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    gap: 0;
   }
-  .container .wrapper2 {
-    background-color: whitesmoke;
-    padding: 2rem 0;
+
+  .container .header {
+    height: 10rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
   }
-  .wrapper2 .learnCard {
-    /* border: 1px red solid; */
-    width: 100%;
-    max-width: 28rem;
-    background-color: #fff;
-    margin: 0 auto;
-    padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.3);
-    margin-bottom: 4rem;
-  }
-  .wrapper2 .btnwrapper {
-    /* border: 1px red solid; */
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .btnwrapper .linkBtn,
-  .mobileBtnWrap .linkBtn {
-    /* border: 1px red solid; */
-    width: 100%;
-    max-width: 13rem;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+  .header .title {
     font-size: 1.2rem;
-    text-transform: capitalize;
-    color: #fff;
-    background-color: #1b1b32;
-    transition: all 0.2s ease-in-out;
+    text-align: center;
   }
-  .btnwrapper .linkBtn:hover {
-    background-color: #31316e;
+
+  .container .wrapper {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
   }
-  .btnwrapper .linkBtn:nth-child(even) {
-    margin: 0 2rem;
-    max-width: 10rem;
+
+  .wrapper>h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
   }
-  .wrapper2 .mobileBtnWrap {
+
+  .wrapper .aboutSection {
+    /* border: 1px red solid; */
+    flex-direction: column-reverse;
+    gap: 0rem;
+  }
+
+  .aboutSection .imgwrapper {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    transform: rotate(0deg);
+  }
+
+  .aboutSection .aboutInfo {
+    max-width: 100%;
+  }
+
+  .aboutInfo .info {
+    font-size: 0.9rem;
+  }
+
+  .container .wrapper2 {
+    margin-bottom: 0;
+    padding: 2rem 1rem;
+  }
+
+  .wrapper2 .learnCard {
+    max-width: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutSection .imgwrapper {
+    height: 30rem;
+  }
+
+  .wrapper2 .btnwrapper {
     display: none;
   }
-  .mobileBtnWrap > .linkBtn {
-    max-width: 8rem;
-    height: 2.3rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-  .mobileBtnWrap .otherTracks {
+
+  .wrapper2 .mobileBtnWrap {
     /* border: 1px red solid; */
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .otherTracks .linkBtn {
-    max-width: 13rem;
-    height: 2.3rem;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-  .otherTracks .linkBtn:first-child {
-    margin-right: 1rem;
-  }
-  @media screen and (max-width: 1200px) {
-    .wrapper .aboutSection {
-      flex-direction: column-reverse;
-      gap: 0rem;
-    }
-    .aboutSection .imgwrapper {
-      height: 40rem;
-      max-width: 100%;
-      margin-bottom: 1.5rem;
-      transform: rotate(0deg);
-    }
-    .aboutSection .aboutInfo {
-      max-width: 100%;
-    }
-  }
-  @media screen and (max-width: 1000px) {
-    .container {
-      gap: 0;
-    }
-    .container .header {
-      height: 10rem;
-      margin-bottom: 2rem;
-      padding: 0 1rem;
-    }
-    .header .title {
-      font-size: 1.2rem;
-      text-align: center;
-    }
-    .container .wrapper {
-      padding: 0 1rem;
-      margin-bottom: 2rem;
-    }
-    .wrapper > h3 {
-      font-size: 1rem;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    .wrapper .aboutSection {
-      /* border: 1px red solid; */
-      flex-direction: column-reverse;
-      gap: 0rem;
-    }
-    .aboutSection .imgwrapper {
-      max-width: 100%;
-      margin-bottom: 1.5rem;
-      transform: rotate(0deg);
-    }
-    .aboutSection .aboutInfo {
-      max-width: 100%;
-    }
-    .aboutInfo .info {
-      font-size: 0.9rem;
-    }
-    .container .wrapper2 {
-      margin-bottom: 0;
-      padding: 2rem 1rem;
-    }
-    .wrapper2 .learnCard {
-      max-width: 30rem;
-      margin-bottom: 3rem;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .aboutSection .imgwrapper {
-      height: 30rem;
-    }
-    .wrapper2 .btnwrapper {
-      display: none;
-    }
-    .wrapper2 .mobileBtnWrap {
-      /* border: 1px red solid; */
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-  
+}

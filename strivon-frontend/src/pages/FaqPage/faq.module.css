@@ -16,10 +16,12 @@
   color: #fff;
   text-transform: capitalize;
   font-size: 2.5rem;
+ 
 }
 .header .title span{
   color: #f9a12e;
   font-size: 2.5rem;
+  font-family: "Ubuntu", "Lexend", sans-serif;
 }
 .wrap {
   /* border: 1px red solid; */
@@ -28,10 +30,11 @@
 }
 .wrap h2 {
   /* border: 1px red solid; */
-  width: max-content;
+  background: linear-gradient(to right, rgba(249, 161, 46, 0.4), rgba(249, 161, 46, 0.1));
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 1.5rem;
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
