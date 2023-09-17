@@ -25,7 +25,7 @@ const Profile = () => {
         <div className={styles.profileimagewrap}>
           <div className={styles.usericon}>
             <object type="image/jpeg" data="">
-              initials
+              {initials ? '' : 'initials'}
             </object>
             <p>{initials}</p>
           </div>

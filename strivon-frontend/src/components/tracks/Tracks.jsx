@@ -49,13 +49,9 @@ const Tracks = () => {
               </div>
               <h3>{title}</h3>
               <p>{desc}</p>
-              <Link className={styles.btn}>
-                View Course
-                </Link>
-              
-
+              <Link className={styles.btn}>View Course</Link>
             </div>
-          )
+          );
         })}
       </div>
     </section>

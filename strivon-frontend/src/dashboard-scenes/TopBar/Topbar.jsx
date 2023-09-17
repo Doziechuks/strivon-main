@@ -26,7 +26,7 @@ const Topbar = ({ toggle, setToggle }) => {
       <div className={styles.namecontainer}>
         <div className={styles.usericon}>
           <object type="image/jpeg" data="">
-            initials
+            {initials ? '' : 'initials'}
           </object>
           <p>{initials}</p>
         </div>
