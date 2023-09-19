@@ -13,7 +13,12 @@ const MobileApp = () => {
         title="Become a certified "
         title2="Mobile App Developer"
         subtitle="who is a mobile app developer"
-        about={mobileApp.about}
+        // about={mobileApp.about}
+        p1={mobileApp.about[0]}
+        p2={mobileApp.about[1]}
+        p3={mobileApp.about[2]}
+        p4={mobileApp.about[3]}
+        p5={mobileApp.about[4]}
         link1="/tracks/frontend"
         track1="see frontend track"
         link2="/tracks/backend"
