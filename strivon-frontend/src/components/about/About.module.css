@@ -60,17 +60,17 @@
   opacity: 1;
 }
 .title {
-  /* border: 1px red solid; */
   width: 100%;
   font-size: 2.3rem;
   line-height: 2rem;
   font-family: sans-serif;
   margin-bottom: 1.5rem;
   color: rgb(27, 27, 50, 0.9);
+  font-family: "Ubuntu", "Lexend", sans-serif;
 }
 .title span {
   color: #f9a12e;
-  font-family: sans-serif;
+  font-family: "Ubuntu", "Lexend", sans-serif;
 }
 .info {
   width: 100%;
@@ -163,9 +163,8 @@
   .wrapper{
     max-width: 100%;
   }
-  /* .info{
-    padding: 0 5%;
-  } */
+
+ 
   .mobilTitle {
     padding: 0 1rem;
     font-size: 1.5rem;
@@ -178,7 +177,6 @@
     font-size: 0.9rem;
   }
   .btn {
-    /* border: 1px red solid; */
     max-width: 100%;
   }
 }

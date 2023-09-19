@@ -88,24 +88,10 @@
   line-height: 2rem;
   color: #1b1b32;
   font-size: 1.3rem;
+  font-family: "Ubuntu", "Lexend", sans-serif;
+  font-weight: 300;
 }
 
-.container .wrapper2 {
-  background-color: whitesmoke;
-  padding: 2rem 0;
-}
-
-.wrapper2 .learnCard {
-  /* border: 1px red solid; */
-  width: 100%;
-  max-width: 28rem;
-  background-color: #fff;
-  margin: 0 auto;
-  padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.3);
-  margin-bottom: 4rem;
-}
 
 .wrapper2 .btnwrapper {
   /* border: 1px red solid; */
@@ -204,9 +190,12 @@
     font-size: 1.2rem;
     text-align: center;
   }
+  .header .title span{
+    font-size: 1.2rem;
+  }
 
   .container .wrapper {
-    padding: 0 1rem;
+    padding: 0 5%;
     margin-bottom: 2rem;
   }
 
@@ -233,23 +222,19 @@
   }
 
   .aboutInfo .info {
-    font-size: 0.9rem;
-  }
-
-  .container .wrapper2 {
-    margin-bottom: 0;
-    padding: 2rem 1rem;
-  }
-
-  .wrapper2 .learnCard {
-    max-width: 30rem;
-    margin-bottom: 3rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .container .wrapper{
+    padding: 0;
+  }
+  .wrapper .aboutSection{
+    padding: 0 5%;
+  }
   .aboutSection .imgwrapper {
-    height: 30rem;
+    height: 25rem;
   }
 
   .wrapper2 .btnwrapper {
@@ -263,5 +248,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .imgwrapper img {
+    object-fit: fill;
+  }
+  .aboutInfo .info{
+    font-family: "Ubuntu", "Lexend", sans-serif;
   }
 }
