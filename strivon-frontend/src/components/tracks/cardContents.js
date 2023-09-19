@@ -12,17 +12,20 @@ export const cardContents = [
         imgUrl: frontend2,
         title: "Frontend Web development",
         desc: "Lorem ipsum dolor pendulus and branching of emphasis prior to understudies",
+        link: 'frontend'
     },
     {
         id: 2,
         imgUrl: backend2,
         title: "Backend Web development",
         desc: "Lorem ipsum dolor rendering and patent colorful studies of web structure",
+        link: 'backend'
     },
     {
         id: 3,
         imgUrl: mobile2,
         title: "Mobile App development",
         desc: "Lorem ipsum dolor rendering and patent colorful studies of web structure",
+        link: "mobileapp"
     }
 ]

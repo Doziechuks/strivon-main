@@ -41,7 +41,7 @@ const Tracks = () => {
       </div> */}
       <div className={styles.wrapper2}>
         {cardContents.map((content) => {
-          const { id, title, desc, imgUrl } = content;
+          const { id, title, desc, imgUrl, link } = content;
           return (
             <div key={id} className={styles.card}>
               <div className={styles.imgcontainer}>
@@ -49,7 +49,7 @@ const Tracks = () => {
               </div>
               <h3>{title}</h3>
               <p>{desc}</p>
-              <Link className={styles.btn}>View Course</Link>
+              <Link to={`tracks/${link}`} className={styles.btn}>View Course</Link>
             </div>
           );
         })}
