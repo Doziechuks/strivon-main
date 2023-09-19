@@ -12,12 +12,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background:
-        radial-gradient(circle at 10% 10%, #f9a12e, transparent 60%),
-        radial-gradient(circle at 90% 90%, #f9a12e, transparent 60%),
-        linear-gradient(45deg, #f0a037, rgba(27, 27, 50, 0.5));
-    background-blend-mode: overlay, overlay, normal;
-    background-size: 5px 5px, 5px 5px, auto; */
   background: linear-gradient(to right, #1b1b32, #31316e);
 }
 .header .title {
@@ -32,6 +26,10 @@
 .container .wrapper {
   width: 100%;
   padding: 0 3rem;
+  /* border: 1px solid #000; */
+}
+.wrapper button{
+  margin: 0 6rem;
 }
 .wrapper > h3 {
   width: 100%;
@@ -44,7 +42,7 @@
 .wrapper .aboutSection {
   width: 100%;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   gap: 6rem;
 }
@@ -55,9 +53,8 @@
   border-radius: 1rem;
   transform: rotate(-5deg);
   overflow: hidden;
-  /* background-color: rgba(27, 27, 50, 0.8);
-  position: relative; */
 }
+
 .imgwrapper img {
   width: 100%;
   height: 100%;
@@ -66,9 +63,16 @@
   /* transform: rotate(-5deg); */
 }
 .aboutSection .aboutInfo {
-  /* border: 1px red solid; */
   width: 100%;
   max-width: 45rem;
+  
+}
+.more{
+  height: 100%;
+}
+.less{
+  height: 30rem;
+  overflow-y: hidden;
 }
 .aboutInfo .info {
   width: 100%;
@@ -76,6 +80,11 @@
   line-height: 2rem;
   color: #1b1b32;
   font-size: 1.3rem;
+  font-family: "Ubuntu", "Lexend", sans-serif;
+  font-weight: 300;
+}
+.aboutInfo .hide{
+  display: none;
 }
 .container .wrapper2 {
   background-color: whitesmoke;
@@ -147,7 +156,27 @@
 .otherTracks .linkBtn:first-child {
   margin-right: 1rem;
 }
+.btn {
+  width: 100%;
+  max-width: 9rem;
+  text-align: center;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: linear-gradient(to right, rgb(27, 27, 50), rgba(27, 27, 50, 0.9));
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.3);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300
+}
 @media screen and (max-width: 1200px) {
+  .container{
+    padding: 0;
+  }
   .wrapper .aboutSection {
     flex-direction: column-reverse;
     gap: 0rem;
@@ -163,9 +192,7 @@
   }
 }
 @media screen and (max-width: 1000px) {
-  .container {
-    gap: 0;
-  }
+
   .container .header {
     height: 10rem;
     margin-bottom: 2rem;
@@ -175,17 +202,21 @@
     font-size: 1.2rem;
     text-align: center;
   }
+ 
   .container .wrapper {
-    padding: 0 0.7rem;
+    padding: 0 5%;
     margin-bottom: 2rem;
   }
+  .container .wrapper2{
+    padding: 0 5%;
+  }
+  
   .wrapper > h3 {
     font-size: 1rem;
     text-align: center;
     margin-bottom: 1rem;
   }
   .wrapper .aboutSection {
-    /* border: 1px red solid; */
     flex-direction: column-reverse;
     gap: 0rem;
   }
@@ -198,7 +229,7 @@
     max-width: 100%;
   }
   .aboutInfo .info {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .container .wrapper2 {
     margin-bottom: 0;
@@ -210,6 +241,9 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .container .wrapper2{
+    padding: 2rem 5%;
+  }
   .aboutSection .imgwrapper {
     height: 30rem;
   }
@@ -223,5 +257,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .aboutSection .imgwrapper {
+    height: 20rem;
+  }
+  .wrapper button{
+    margin: 0;
   }
 }
