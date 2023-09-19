@@ -8,8 +8,7 @@ const CohootStart = () => {
         <div className={styles.wrapper}>
             <div className={styles.left}>
                 <h1>Apply to Cohort 3 bootcamp</h1>
-                <p>The cohort 3 courses: web development foundation, software engineering, asp.net, 
-                    data analytics, and product design.</p>
+                <p>The cohort 3 courses: frontend web development, backend web development and mobile app development</p>
             </div>
             <div className={styles.right}>
                 <div className={styles.startdate}>

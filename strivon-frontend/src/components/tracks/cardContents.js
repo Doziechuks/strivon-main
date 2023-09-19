@@ -11,21 +11,21 @@ export const cardContents = [
         id: 1,
         imgUrl: frontend2,
         title: "Frontend Web development",
-        desc: "Lorem ipsum dolor pendulus and branching of emphasis prior to understudies",
+        desc: "You will be introduced into the world of web development where you will master the core skills you will need in advanced studies",
         link: 'frontend'
     },
     {
         id: 2,
         imgUrl: backend2,
         title: "Backend Web development",
-        desc: "Lorem ipsum dolor rendering and patent colorful studies of web structure",
+        desc: "Everything that goes on in the hood of a website (server-side) and how changes can be effected from the frontend (client-side)",
         link: 'backend'
     },
     {
         id: 3,
         imgUrl: mobile2,
         title: "Mobile App development",
-        desc: "Lorem ipsum dolor rendering and patent colorful studies of web structure",
+        desc: "Mobile app development involves both the unseen server-side operations and user interface changes on your device.",
         link: "mobileapp"
     }
 ]

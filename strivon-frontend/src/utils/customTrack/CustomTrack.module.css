@@ -264,4 +264,9 @@
   .wrapper button{
     margin: 0;
   }
+  .btn{
+    font-size: 1rem;
+    max-width: 7rem;
+    height: 2.5rem;
+  }
 }

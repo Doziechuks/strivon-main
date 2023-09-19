@@ -51,17 +51,20 @@ const About = () => {
           </h6>
           <div className={styles.info}>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestiae dolorum, dolor fugit delectus obcaecati saepe iusto enim
-              odit eius minus corrupti vitae expedita alias, iste libero quas
-              maiores illum! Esse.
+              At Strivon, our commitment is to meet your unique needs as a student. Unlike treating you as part of a crowd, 
+              we recognize and value your individual journey. With our team of dedicated and inspired instructors by your side, 
+              you can rest assured that you won't fall behind. Our promise is to provide you with a rock-solid foundation that 
+              can give you a significant advantage in the competitive tech market.
+
             </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestiae dolorum, dolor fugit delectus obcaecati saepe iusto enim
-              odit eius minus corrupti vitae expedita alias, iste libero quas
-              maiores illum! Esse. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Sapiente voluptas ratione amet inventore rem ex.
+            We understand that every student is different, and that's why we tailor our approach
+             to your specific requirements. Whether you're a beginner or looking to enhance your skills, 
+             we're here to support your growth. At Strivon, it's not just about education; it's about 
+             empowering you to thrive in the dynamic world of technology.
+             <br />
+             
+Join us on this exciting journey, and let's strive for success together.
             </p>
           </div>
           <Link to="/about" className={styles.btn} onClick={handleScrollTop}>
