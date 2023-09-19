@@ -7,10 +7,11 @@
 .question {
   width: 100%;
   /* border: 1px red solid; */
-  color: #1b1b32;
+  color: rgba(27, 27, 50, 0.8);
   padding: 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bolder;
+  font-family: "Ubuntu", "Lexend", sans-serif;
   /* text-align: justify; */
 }
 .answer {

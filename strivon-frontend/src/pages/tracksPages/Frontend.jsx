@@ -13,7 +13,12 @@ const Frontend = () => {
         title="Become a certified "
         title2="Frontend Developer"
         subtitle="who is a frontend developer"
-        about={frontend.about}
+        // about={frontend.about}
+        p1={frontend.about[0]}
+        p2={frontend.about[1]}
+        p3={frontend.about[2]}
+        p4={frontend.about[3]}
+        p5={frontend.about[4]}
         link1="/tracks/backend"
         track1="see backend track"
         link2="/tracks/mobileapp"

@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./CustomTrack.module.css";
 import { Link } from "react-router-dom";
 import { handleScrollTop } from "../functions/scrollToTop";
 
 const CustomTrack = (props) => {
+  const [showInfo, setShowInfo] = useState(false);
   const {
     title,
     title2,
     subtitle,
-    about,
+    about, p1, p2, p3, p4, p5,
     track1,
     track2,
     image,
@@ -16,6 +17,7 @@ const CustomTrack = (props) => {
     link2,
     children,
   } = props;
+
 
   return (
     <main className={styles.container}>
@@ -25,14 +27,27 @@ const CustomTrack = (props) => {
       <section className={styles.wrapper}>
         <h3>{subtitle}?</h3>
         <div className={styles.aboutSection}>
-          <div className={styles.aboutInfo}>
+          <div className={`${styles.aboutInfo} ${showInfo ? styles.more : styles.less}`}>
+            <p className={showInfo ? styles.more : styles.less}>
             <p className={styles.info}>{about}</p>
+            <p className={styles.info}>{p1}</p>
+            <br />
+            <p className={styles.info}>{p2}</p>
+            <br />
+            <br className={showInfo && styles.hide}/>
+            <p className={styles.info}>{p3}</p>
+            <br />
+            <p className={styles.info}>{p4}</p>
+            <br />
+            <p className={styles.info}>{p5}</p>
+            </p>
           </div>
           <div className={styles.imgwrapper}>
             <img src={image} alt="frontend" />
             {/* <h1>test</h1> */}
           </div>
         </div>
+        <button onClick={() => setShowInfo((prev) => !prev)} className={styles.btn}>{showInfo ? "show less": "show more"}</button>
       </section>
       <section className={`${styles.wrapper2} ${styles.wrapper}`}>
         <h3>what you will learn</h3>
