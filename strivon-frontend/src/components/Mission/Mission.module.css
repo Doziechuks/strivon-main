@@ -1,0 +1,28 @@
+.container {
+    height: 10rem;
+    padding: 0 8rem;
+    /* margin: 0 5rem; */
+}
+h2{
+    font-family: "Ubuntu", "Lexend", sans-serif;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, rgba(249, 161, 46, 0.4), rgba(249, 161, 46, 0.1));
+    border-bottom: 2px solid;
+}
+.container p{
+    font-family: "Ubuntu", "Lexend", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-weight: 400;
+}
+@media screen and (max-width:600px) {
+    .container{
+        padding: 0 5%;
+        height: 15rem;
+    }
+    .container p{
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: justify;
+    }
+}

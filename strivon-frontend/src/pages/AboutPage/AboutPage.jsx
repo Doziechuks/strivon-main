@@ -5,6 +5,7 @@ import bg from "../../assets/images/aboutbg.jpg";
 import frontend from "../../assets/images/frontend.avif";
 import strive from '../../assets/images/strivon-graphics.jpg'
 import CustomTrack from "../../utils/customTrack/CustomTrack";
+import Mission from "../../components/Mission/Mission";
 
 const AboutPage = () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ const AboutPage = () => {
     });
   }, []);
   return (
+    <>
     <main className={styles.container}>
       <section className={styles.inner}>
       <div className={styles.header}>
@@ -54,6 +56,14 @@ const AboutPage = () => {
         </section>
       </section>
     </main>
+    <Mission title="Our Mission" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                vitae iure voluptate nam sit laudantium debitis ipsa eos natus
+                deserunt neque nostrum quia, repudiandae architecto dolorum"/>
+
+    <Mission title="Our Vision" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                vitae iure voluptate nam sit laudantium debitis ipsa eos natus
+                deserunt neque nostrum quia, repudiandae architecto dolorum"/>
+    </>
   );
 };
 
