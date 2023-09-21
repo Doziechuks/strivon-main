@@ -120,7 +120,6 @@
   max-width: 80%;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 100;
-
   color: rgba(27, 27, 50, 0.7);
   margin: 0 auto;
 }
@@ -215,18 +214,21 @@
   .box {
     max-width: 50%;
   }
-  .card{
+
+  .card {
     height: 34rem;
   }
-  .card h3{
+
+  .card h3 {
     /* border: 1px solid #000; */
     width: 80%;
   }
-  .card p{
-    /* border: 1px solid #000; */
+
+  .card p {
     font-size: 1rem;
   }
-  .btn{
+
+  .btn {
     left: 25%;
     font-size: 1rem;
     max-width: 8rem;
@@ -271,10 +273,13 @@
     max-width: 100%;
     margin-bottom: 1.5rem;
   }
+
   .card p {
     font-size: 1rem;
     max-width: 100%;
-    margin: 0 5%;
+    /* margin: 0 5%; */
+    padding: 0 5%;
+    border: 1px solid #000;
   }
 
   .imgcontainer img {

@@ -37,6 +37,7 @@
   font-size: 2rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
+  font-family: "Ubuntu", "Lexend", sans-serif;
 
 }
 .wrapper .aboutSection {
@@ -112,16 +113,19 @@
 .mobileBtnWrap .linkBtn {
   /* border: 1px red solid; */
   width: 100%;
-  max-width: 13rem;
+  max-width: 14rem;
   height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
+  font-weight: 300;
   text-transform: capitalize;
   color: #fff;
-  background-color: #1b1b32;
+  background: linear-gradient(to right, rgb(27, 27, 50), rgba(27, 27, 50, 0.9));
+  font-family: "Ubuntu", "Lexend", sans-serif;
   transition: all 0.2s ease-in-out;
+  border-radius: 0.5rem;
 }
 .btnwrapper .linkBtn:hover {
   background-color: #31316e;
