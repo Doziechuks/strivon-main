@@ -79,7 +79,7 @@
   text-align: center;
 }
 .trackLink:hover {
-  background: #1b1b32;
+  background: linear-gradient(to right, #1b1b32, #31316e);
   color: white;
 }
 .active {
