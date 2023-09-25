@@ -3,7 +3,8 @@ import styles from "./customstyle.module.css";
 import { trackData } from "./aboutTrackData";
 import CustomTrack from "../../utils/customTrack/CustomTrack";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
-import mobileAppImage from "../../assets/images/mobile app track.jpg";
+// import mobileAppImage from "../../assets/images/mobile app track.jpg";
+import mobileAppImage from "../../assets/images/bbb.jpg";
 
 const MobileApp = () => {
   const { mobileApp } = trackData;
