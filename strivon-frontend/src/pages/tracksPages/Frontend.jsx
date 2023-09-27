@@ -4,7 +4,7 @@ import { trackData } from "./aboutTrackData";
 import CustomTrack from "../../utils/customTrack/CustomTrack";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
 // import frontendImage from "../../assets/images/frontend track.jpg";
-import frontendImage from "../../assets/images/front.jpg";
+import frontendImage from "../../assets/images/frontend-track-dark.jpg";
 import image from "../../assets/images/pp5.jpg"
 
 const Frontend = () => {
