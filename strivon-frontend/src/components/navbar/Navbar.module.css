@@ -39,6 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
   /* gap: 2rem; */
 }
 .option {
@@ -52,6 +53,8 @@
   text-align: center;
   /* transition: all 0.5s ease-in-out; */
   cursor: pointer;
+  /* font-family: "Ubuntu", "Lexend", sans-serif;
+  font-weight: 500; */
 }
 .trackOptions {
   height: 100%;
@@ -94,7 +97,7 @@
 }
 .register {
   background: linear-gradient(to right, rgb(27, 27, 50), rgba(27, 27, 50, 0.9));
-  font-family: "Ubuntu", "Lexend";
+  font-family: "Ubuntu", "Lexend", sans-serif;
   padding: 0.7rem 1rem;
   border-radius: 3rem;
   color: #fff;

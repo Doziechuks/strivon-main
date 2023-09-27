@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect }from "react";
 import styles from "./customstyle.module.css";
+import { handleScrollTop } from "../../utils/functions/scrollToTop";
 import { trackData } from "./aboutTrackData";
 import CustomTrack from "../../utils/customTrack/CustomTrack";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
 // import mobileAppImage from "../../assets/images/mobile app track.jpg";
-import mobileAppImage from "../../assets/images/mobile-track-dark.jpg";
+import mobileAppImage from "../../assets/images/mobile-track-dark1.jpg";
 
 const MobileApp = () => {
   const { mobileApp } = trackData;
+
+  useEffect(() => {
+    handleScrollTop()
+  })
   return (
     <>
       <CustomTrack

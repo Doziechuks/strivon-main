@@ -43,7 +43,8 @@
 .wrapper>h3 {
   background: linear-gradient(to right, rgba(249, 161, 46, 0.4), rgba(249, 161, 46, 0.1));
   font-family: "Ubuntu", "Lexend", sans-serif;
-  width: 100%;
+  width: 82%;
+  margin: auto;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -229,11 +230,17 @@
   .container .wrapper{
     padding: 0;
   }
+  .wrapper h3{
+    width: 88%;
+    padding: 0.5rem 0;
+    background: none;
+    font-size: 1rem;
+  }
   .wrapper .aboutSection{
     padding: 0 5%;
   }
   .aboutSection .imgwrapper {
-    height: 20rem;
+    height: 23rem;
   }
 
   .wrapper2 .btnwrapper {

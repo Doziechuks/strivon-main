@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect }from "react";
 import styles from "./customstyle.module.css";
+import { handleScrollTop } from "../../utils/functions/scrollToTop";
 import { trackData } from "./aboutTrackData";
 import CustomTrack from "../../utils/customTrack/CustomTrack";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
 // import frontendImage from "../../assets/images/frontend track.jpg";
-import frontendImage from "../../assets/images/frontend-track-dark.jpg";
+import frontendImage from "../../assets/images/frontend-track-dark1.jpg";
 
 const Frontend = () => {
   const { frontend } = trackData;
+
+  useEffect(() => {
+    handleScrollTop()
+  })
   return (
     <>
       <CustomTrack

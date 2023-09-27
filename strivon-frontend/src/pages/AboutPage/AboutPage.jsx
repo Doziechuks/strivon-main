@@ -6,6 +6,7 @@ import frontend from "../../assets/images/frontend.avif";
 import strive from '../../assets/images/strivon-graphics.jpg'
 import CustomTrack from "../../utils/customTrack/CustomTrack";
 import Mission from "../../components/Mission/Mission";
+import { handleScrollTop } from "../../utils/functions/scrollToTop";
 
 const AboutPage = () => {
   useEffect(() => {
@@ -14,6 +15,9 @@ const AboutPage = () => {
       metaDescription: "Learn about Strivon Academy",
     });
   }, []);
+  useEffect(() => {
+    handleScrollTop()
+  })
   return (
     <>
     <main className={styles.container}>
